@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
-const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
-    <h1>About</h1>
-    <p>This is the about page</p>
+const PortfolioPage = () => (
+  <Layout title="My Projects">
+    <h1>Portfolio</h1>
+    <p>Details of my projects</p>
     <p>
       <Link href="/">
         <a>Go home</a>
@@ -13,4 +13,4 @@ const AboutPage = () => (
   </Layout>
 )
 
-export default AboutPage
+export default PortfolioPage

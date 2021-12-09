@@ -1,41 +1,47 @@
-import React, { ReactNode } from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React, { ReactNode } from "react";
+import Link from "next/link";
+import Head from "next/head";
+import Header from "./Header";
 
 type Props = {
-  children?: ReactNode
-  title?: string
-}
+  children?: ReactNode;
+  title?: string;
+};
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
+const Layout = ({ children, title = "Default title" }: Props) => (
   <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
-      </nav>
-    </header>
+    <Header />
     {children}
-    <footer>
+    <footer className="fixed bottom-0 left-0 w-full h-10 text-center">
       <hr />
-      <span>I'm here to stay (Footer)</span>
+      <span className="font-sans text-base">Created by Kevin Tan (Footer)</span>
     </footer>
   </div>
-)
+);
 
-export default Layout
+export default Layout;
+
+
+/* import Head from 'next/head'
+import Header from './Header'
+
+export default function Layout({ children, pageTitle, description, ...props }) {
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <title>{pageTitle}</title>
+      </Head>
+      <section>
+        <Header />
+        <div className="content">{children}</div>
+      </section>
+    </>
+  )
+} */
