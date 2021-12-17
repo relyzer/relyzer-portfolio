@@ -2,6 +2,9 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    boxShadow: {
+      glow: '0 0 5px #D9ED92'
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -26,6 +29,9 @@ module.exports = {
       gray: {
         DEFAULT: '#6B7280',
       },
+      black: {
+        DEFAULT: '#000000'
+      },
       white: {
         DEFAULT: '#FFFFFF',
       }
@@ -37,6 +43,7 @@ module.exports = {
     extend: {},
   },
   variants: {
+    animation: ['responsive', 'motion-safe', 'motion-reduce'],
     extend: {},
   },
   plugins: [],

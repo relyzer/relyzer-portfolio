@@ -2,10 +2,10 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="w-auto m-auto h-28">
-      <h1 className="font-extrabold text-center">Kevin Tan</h1>
-      <h3 className="font-medium">Software Engineer</h3>
-    </div>
+    <section className="w-auto m-auto h-60 p-20 rounded-b-xl">
+      <h1 className="font-extrabold text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl p-2 pop-in">Kevin Tan</h1>
+      <h3 className="font-medium text-center text-base sm:text-lg md:text-lg lg:text-2xl p-4 fade-in-text">Software Engineer</h3>
+    </section>
   );
 };
 

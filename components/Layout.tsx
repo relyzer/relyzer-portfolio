@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Header from "./Header";
+import Footer from "./Footer";
 
 type Props = {
   children?: ReactNode;
@@ -17,10 +18,7 @@ const Layout = ({ children, title = "Default title" }: Props) => (
     </Head>
     <Header />
     {children}
-    <footer className="fixed bottom-0 left-0 w-full h-10 text-center">
-      <hr />
-      <span className="font-sans text-base">Created by Kevin Tan (Footer)</span>
-    </footer>
+    <Footer />
   </div>
 );
 
