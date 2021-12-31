@@ -3,16 +3,18 @@ import Link from "next/link";
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="section">
-      <h2>Portfolio</h2>
-      <p>
-        Take a look at my{" "}
-        <Link href="/portfolio">
-          <a>portfolio</a>
-        </Link>
-        !
-      </p>
-    </div>
+    <section id="portfolio" className="section">
+      <div className="w-auto h-auto flex-auto card">
+        <h2 className="sub-header">Portfolio</h2>
+        <p className="p-4">
+          Take a look at my{" "}
+          <Link href="/portfolio">
+            <a>portfolio</a>
+          </Link>
+          !
+        </p>
+      </div>
+    </section>
   );
 };
 

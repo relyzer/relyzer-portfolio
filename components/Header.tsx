@@ -1,11 +1,23 @@
 import React from "react";
+import SoundButton from "./SoundButton";
 
 const Header = () => {
   return (
-    <header>
-      <div className="p-2 rounded-b-3xl bg-black shadow-xl">
-        <nav className="w-full h-full text-center font-medium text-lg align-middle">
-          <a href="#about" className="header-links">About</a><a href="#experience" className="header-links">Experience</a><a href="#portfolio" className="header-links">Portfolio</a><a href="#contact" className="header-links">Contact</a>
+    <header className="w-auto">
+      <div className="rounded-b-3xl bg-black w-full">
+        <nav className="p-2 w-full h-full text-center font-medium text-lg align-middle space-x-8 lg:space-x-12">
+          <a href="#about" className="header-links">
+            <SoundButton name="About" />
+          </a>
+          <a href="#experience" className="header-links">
+            <SoundButton name="Experience" />
+          </a>
+          <a href="#portfolio" className="header-links">
+            <SoundButton name="Portfolio" />
+          </a>
+          <a href="#contact" className="header-links">
+            <SoundButton name="Contact" />
+          </a>
         </nav>
       </div>
     </header>

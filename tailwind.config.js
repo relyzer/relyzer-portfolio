@@ -1,23 +1,23 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     boxShadow: {
-      glow: '0 0 5px #D9ED92'
+      glow: "0 0 5px #D9ED92",
+      "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'yale-blue': '#184E77',
-      'lapis-lazuli': '#1E6091',
-      'celadon-blue': '#1A759F',
-      'blue-munsell': '#168AAD',
-      'viridian-green': '#34A0A4',
-      'keppel': '#52B69A',
-      'ocean-green': '#76C893',
-      'granny-smith-apple': '#99D98C',
-      'yellow-green-crayola': '#B5E48C',
-      'key-lime': '#D9ED92',
+      transparent: "transparent",
+      current: "currentColor",
+      "nyanza": "#d8f3dc",
+      "turquoise-green": "#b7e4c7",
+      "turquoise-green-two": "#95d5b2",
+      "ocean-green": "#74c69d",
+      "ocean-green-two": "#52b788",
+      "illuminating-emerald": "#40916c",
+      "bottle-green": "#2d6a4f",
+      "brunswick-green": "#1b4332",
+      "dark-jungle-green": "#081c15",
       // // theme('colors.orange')
       // orange: {
       //   // theme('colors.orange.DEFAULT')
@@ -27,24 +27,31 @@ module.exports = {
       //   dark: '#FF9E10',
       // },
       gray: {
-        DEFAULT: '#6B7280',
+        DEFAULT: "#6B7280",
       },
       black: {
-        DEFAULT: '#000000'
+        DEFAULT: "#000000",
       },
       white: {
-        DEFAULT: '#FFFFFF',
-      }
+        DEFAULT: "#FFFFFF",
+      },
     },
     fontFamily: {
-      sans: ['Verdana', 'Helvetica', 'sans-serif'],
+      sans: ["Verdana", "Helvetica", "sans-serif"],
       serif: [],
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        banner: "repeat(9, minmax(30px, auto))",
+      },
+      dropShadow: {
+        "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
+      },
+    },
   },
   variants: {
-    animation: ['responsive', 'motion-safe', 'motion-reduce'],
+    animation: ["responsive", "motion-safe", "motion-reduce"],
     extend: {},
   },
   plugins: [],
-}
+};

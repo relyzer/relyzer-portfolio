@@ -1,9 +1,23 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-black bottom-0 left-0 w-full h-10 text-center">
-      <span className="font-sans text-base text-ocean-green motion-safe:animate-pulse align-middle">Created by Kevin Tan (Footer)</span>
+    <footer className="bg-black mt-auto p-2">
+      <div className="flex">
+        <div className="flex-1 font-sans text-ocean-green motion-safe:animate-pulse text-left ml-10">
+          Website by <strong>Kevin Tan</strong>
+        </div>
+        <div className="flex-1 text-right text-3xl text-illuminating-emerald">
+          <a href="https://www.linkedin.com/in/kevintyh/" className="px-8">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://github.com/relyzer" className="mr-10">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
+      </div>
     </footer>
   );
 };

@@ -1,47 +1,41 @@
 # TypeScript Next.js example
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+A simple, first iteration of my personal website!  
+This project serves as a training ground for my frontend skills and clean coding.  
+As my skills improve, I hope to add more cool features to my site, so stay tuned!  
 
-## Preview
+## Website initially started from:
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
-
-## Deploy your own
+A TypeScript Next.js example  
+By executing [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
 
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Make sure to install all dependencies and TypeScript!
 
 ```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
+npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## To run the development server
 
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
+```bash
+npm run dev
 ```
 
-To enable TypeScript's features, we install the type declarations for React and Node.
+## Documentations used
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+Next.js: https://nextjs.org/docs/getting-started
+React.js: https://reactjs.org/docs/getting-started.html
+TailwindCSS: https://tailwindcss.com/docs/installation
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+For button sound effects:
+Great short tutorial with easy-to-use hooks!
+Use-sound / Howler.js: https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+Fontawesome: https://fontawesome.com/v6.0
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+Epic Spinners: https://epic-spinners.epicmax.co/
+
