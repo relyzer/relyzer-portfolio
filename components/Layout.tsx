@@ -41,6 +41,7 @@ const Layout = ({ children, title = "Default title" }: Props) => (
         src="https://kit.fontawesome.com/fd07a2fb4b.js"
         crossOrigin="anonymous"
       ></script>
+      <script src="../lib/webGL/UnityLoader.js"></script>
     </Head>
     <body>
       <Header />

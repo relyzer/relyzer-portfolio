@@ -1,8 +1,8 @@
 export interface Experience {
   company: string;
+  location: string;
   title: string;
   duration: string;
-  description?: string;
 }
 
 export interface Education {

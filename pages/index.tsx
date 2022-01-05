@@ -1,26 +1,26 @@
-import Link from "next/link";
+// import Link from "next/link";
+// import { useRef } from "react";
+import React from "react";
+
 import Layout from "../components/Layout";
+import { Banner, About, Experience, Skills, Portfolio, Contact } from "../components/sections/index"
 
-import Banner from "../components/Banner";
-import About from "../components/About";
-import Experience from "../components/Experience";
-import Portfolio from "../components/Portfolio";
-import Contact from "../components/Contact";
-import Skills from "../components/Skills";
-
-const IndexPage = () => (
-  <Layout title="Kevin Tan">
-    <Banner />
-    <About />
-    <hr />
-    <Experience />
-    <hr />
-    <Skills />
-    <hr />
-    <Portfolio />
-    <hr />
-    <Contact />
-  </Layout>
-);
+const IndexPage = () => {
+  // const ref = useRef()
+  return (
+    <Layout title="Kevin Tan">
+      <Banner />
+      <About />
+      <hr />
+      <Experience />
+      <hr />
+      <Skills />
+      <hr />
+      <Portfolio />
+      <hr />
+      <Contact />
+    </Layout>
+  );
+};
 
 export default IndexPage;

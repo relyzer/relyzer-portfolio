@@ -1,13 +1,16 @@
-# TypeScript Next.js example
+# relyzer.github.io
 
 A simple, first iteration of my personal website!  
-This project serves as a training ground for my frontend skills and clean coding.  
+This project serves as a training ground for my front-end skills and clean coding.  
 As my skills improve, I hope to add more cool features to my site, so stay tuned!  
 
 ## Website initially started from:
 
 A TypeScript Next.js example  
 By executing [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+```bash
+npx create-next-app@latest
+```
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
@@ -27,15 +30,15 @@ npm run dev
 
 ## Documentations used
 
-Next.js: https://nextjs.org/docs/getting-started
-React.js: https://reactjs.org/docs/getting-started.html
-TailwindCSS: https://tailwindcss.com/docs/installation
+Next.js: https://nextjs.org/docs/getting-started  
+React.js: https://reactjs.org/docs/getting-started.html  
+TailwindCSS: https://tailwindcss.com/docs/installation  
 
-For button sound effects:
-Great short tutorial with easy-to-use hooks!
-Use-sound / Howler.js: https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/
+For button sound effects:  
+Great short tutorial with easy-to-use hooks!  
+Use-sound / Howler.js: https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/  
 
-Fontawesome: https://fontawesome.com/v6.0
+Fontawesome: https://fontawesome.com/v6.0  
 
-Epic Spinners: https://epic-spinners.epicmax.co/
+Epic Spinners: https://epic-spinners.epicmax.co/  
 

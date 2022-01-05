@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 
-import { Skill } from "../interfaces/skills";
+import { Skill } from "../../interfaces/skills";
+import SkillDetail from "./sub-section/SkillDetail";
 
 const Skills = () => {
   const programmingArr: Skill[] = [
@@ -136,127 +136,79 @@ const Skills = () => {
   ];
 
   return (
-    <section className="section">
+    <section id="skill" className="section">
       <div className="w-auto h-auto flex-auto card">
         <h2 className="sub-header">My Skills</h2>
         <h3 className="text-center font-semibold p-4">
           Programming/Markup languages
         </h3>
         <div className="text-center space-x-10">
-          {programmingArr.map((skill: Skill) => {
-            return (
-              <>
-                <figure className="inline-block">
-                  <Image
-                    src={skill.filePath}
-                    alt={skill.altText}
-                    width={60}
-                    height={60}
-                  ></Image>
-                  <figcaption className="">{skill.caption}</figcaption>
-                </figure>
-              </>
-            );
-          })}
+          {programmingArr.map((skill: Skill) => (
+            <SkillDetail
+              filePath={skill.filePath}
+              altText={skill.altText}
+              caption={skill.caption}
+            />
+          ))}
         </div>
 
         <h3 className="text-center font-semibold p-4">
           Front-end Technologies
         </h3>
         <div className="text-center space-x-10">
-          {frontendArr.map((skill: Skill) => {
-            return (
-              <>
-                <figure className="inline-block">
-                  <Image
-                    src={skill.filePath}
-                    alt={skill.altText}
-                    width={60}
-                    height={60}
-                  ></Image>
-                  <figcaption className="">{skill.caption}</figcaption>
-                </figure>
-              </>
-            );
-          })}
+          {frontendArr.map((skill: Skill) => (
+            <SkillDetail
+              filePath={skill.filePath}
+              altText={skill.altText}
+              caption={skill.caption}
+            />
+          ))}
         </div>
 
         <h3 className="text-center font-semibold p-4">Back-end Technologies</h3>
         <div className="text-center space-x-10">
-          {backendArr.map((skill: Skill) => {
-            return (
-              <>
-                <figure className="inline-block">
-                  <Image
-                    src={skill.filePath}
-                    alt={skill.altText}
-                    width={60}
-                    height={60}
-                  ></Image>
-                  <figcaption className="">{skill.caption}</figcaption>
-                </figure>
-              </>
-            );
-          })}
+          {backendArr.map((skill: Skill) => (
+            <SkillDetail
+              filePath={skill.filePath}
+              altText={skill.altText}
+              caption={skill.caption}
+            />
+          ))}
         </div>
 
         <h3 className="text-center font-semibold p-4">
           Mobile App Technologies
         </h3>
         <div className="text-center space-x-10">
-          {mobileArr.map((skill: Skill) => {
-            return (
-              <>
-                <figure className="inline-block">
-                  <Image
-                    src={skill.filePath}
-                    alt={skill.altText}
-                    width={60}
-                    height={60}
-                  ></Image>
-                  <figcaption className="">{skill.caption}</figcaption>
-                </figure>
-              </>
-            );
-          })}
+          {mobileArr.map((skill: Skill) => (
+            <SkillDetail
+              filePath={skill.filePath}
+              altText={skill.altText}
+              caption={skill.caption}
+            />
+          ))}
         </div>
 
         <h3 className="text-center font-semibold p-4">UI/UX Design</h3>
         <div className="text-center space-x-10">
-          {designArr.map((skill: Skill) => {
-            return (
-              <>
-                <figure className="inline-block">
-                  <Image
-                    src={skill.filePath}
-                    alt={skill.altText}
-                    width={60}
-                    height={60}
-                  ></Image>
-                  <figcaption className="">{skill.caption}</figcaption>
-                </figure>
-              </>
-            );
-          })}
+          {designArr.map((skill: Skill) => (
+            <SkillDetail
+              filePath={skill.filePath}
+              altText={skill.altText}
+              caption={skill.caption}
+            />
+          ))}
         </div>
 
         <h3 className="text-center font-semibold p-4">DevOps</h3>
         <div className="text-center space-x-10">
-          {devOpsArr.map((skill: Skill) => {
-            return (
-              <>
-                <figure className="inline-block">
-                  <Image
-                    src={skill.filePath}
-                    alt={skill.altText}
-                    width={60}
-                    height={60}
-                  ></Image>
-                  <figcaption className="">{skill.caption}</figcaption>
-                </figure>
-              </>
-            );
-          })}
+          {devOpsArr.map((skill: Skill) => (
+            <SkillDetail
+              filePath={skill.filePath}
+              altText={skill.altText}
+              caption={skill.caption}
+            />
+          ))}
         </div>
 
         <details>
@@ -264,21 +216,13 @@ const Skills = () => {
             Others (Click to reveal)
           </summary>
           <div className="text-center space-x-10">
-            {othersArr.map((skill: Skill) => {
-              return (
-                <>
-                  <figure className="inline-block">
-                    <Image
-                      src={skill.filePath}
-                      alt={skill.altText}
-                      width={60}
-                      height={60}
-                    ></Image>
-                    <figcaption className="">{skill.caption}</figcaption>
-                  </figure>
-                </>
-              );
-            })}
+            {othersArr.map((skill: Skill) => (
+              <SkillDetail
+                filePath={skill.filePath}
+                altText={skill.altText}
+                caption={skill.caption}
+              />
+            ))}
           </div>
         </details>
       </div>

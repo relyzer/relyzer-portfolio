@@ -47,6 +47,12 @@ module.exports = {
       dropShadow: {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
       },
+      width: {
+        "hd": "1920px",
+      },
+      height: {
+        "hd": "1080px",
+      }
     },
   },
   variants: {

@@ -1,5 +1,5 @@
 import React from "react";
-import SoundButton from "./SoundButton";
+import { SoundButton } from "./elements/button";
 
 const Header = () => {
   return (
