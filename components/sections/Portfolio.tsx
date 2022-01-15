@@ -1,9 +1,15 @@
-import React from "react";
+import React, { RefObject } from "react";
 import Link from "next/link";
 
-const Portfolio = () => {
+import { ForwardLink } from "../elements/button";
+
+type Props = {
+  ref?: RefObject<HTMLInputElement>;
+};
+
+const Portfolio = ({ ref }: Props) => {
   return (
-    <section id="portfolio" className="section">
+    <section id="portfolio" ref={ref} className="section">
       <div className="w-auto h-auto flex-auto card">
         <h2 className="sub-header">Portfolio</h2>
         <p className="p-4">
@@ -14,6 +20,7 @@ const Portfolio = () => {
           !
         </p>
       </div>
+      <ForwardLink href="#contact" />
     </section>
   );
 };

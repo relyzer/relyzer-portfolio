@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Link from "next/link";
+import Layout from "../components/Layout";
 
 const PortfolioPage = () => (
   <Layout title="My Projects">
@@ -11,6 +11,6 @@ const PortfolioPage = () => (
       </Link>
     </p>
   </Layout>
-)
+);
 
-export default PortfolioPage
+export default PortfolioPage;

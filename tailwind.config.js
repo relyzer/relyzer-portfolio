@@ -9,7 +9,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      "nyanza": "#d8f3dc",
+      nyanza: "#d8f3dc",
       "turquoise-green": "#b7e4c7",
       "turquoise-green-two": "#95d5b2",
       "ocean-green": "#74c69d",
@@ -48,11 +48,11 @@ module.exports = {
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
       },
       width: {
-        "hd": "1920px",
+        hd: "1920px",
       },
       height: {
-        "hd": "1080px",
-      }
+        hd: "1080px",
+      },
     },
   },
   variants: {
