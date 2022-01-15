@@ -1,10 +1,14 @@
-import React from "react";
+import React, { RefObject } from "react";
 
 import { Experience, Education } from "../../interfaces/experience";
 import ExperienceDetail from "./sub-section/ExperienceDetail";
-import { ForwardButton } from "../elements/button";
+import { ForwardLink } from "../elements/button";
 
-const Experience = () => {
+type Props = {
+  ref?: RefObject<HTMLInputElement>;
+};
+
+const Experience = ({ ref }: Props) => {
   const experienceArr: Experience[] = [
     {
       company: "M1 Limited",
@@ -29,7 +33,7 @@ const Experience = () => {
     },
   ];
   return (
-    <section id="experience" className="section">
+    <section id="experience" ref={ref} className="section">
       <div className="w-auto h-auto flex-auto card">
         {/* Experience section */}
         <h2 className="sub-header">Experience</h2>
@@ -52,7 +56,7 @@ const Experience = () => {
           />
         ))}
       </div>
-      {/* <ForwardButton href="#skill" /> */}
+      <ForwardLink href="#skill"  title="skills"/>
     </section>
   );
 };

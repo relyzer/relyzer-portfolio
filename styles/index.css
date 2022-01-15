@@ -4,17 +4,21 @@
 
 @layer base {
   h1 {
-    @apply text-4xl;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-7xl;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-base sm:text-lg md:text-lg lg:text-2xl;
   }
   h3 {
-    @apply text-xl;
+    @apply text-sm sm:text-base md:text-base lg:text-xl;
+  }
+
+  h4 {
+    @apply text-xs sm:text-sm md:text-sm lg:text-lg;
   }
 
   p {
-    @apply text-base;
+    @apply text-base whitespace-pre-line;
   }
 
   a {
@@ -22,9 +26,27 @@
   a:hover {
   }
 
-  body {
-    @apply p-0 m-0 bg-turquoise-green h-screen flex flex-col;
+  html {
+    /* Firefox and non-webkit browser support */
     scroll-behavior: smooth;
+    scrollbar-width: normal;
+    scrollbar-color: #081c15 #52b788;
+  }
+
+  html::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    @apply bg-ocean-green hover:bg-ocean-green-two transition-colors rounded-3xl;
+  }
+
+  html::-webkit-scrollbar-track {
+    @apply bg-turquoise-green;
+  }
+
+  body {
+    @apply p-0 m-0 bg-turquoise-green min-h-screen flex flex-col;
   }
 
   * {
@@ -38,7 +60,7 @@
   summary:before {
     @apply absolute top-5 left-4 border-solid;
     content: "";
-    border-width: .5rem;
+    border-width: 0.5rem;
     border-color: transparent transparent transparent #000000;
     transform: rotate(0);
     transform-origin: 0.2rem 50%;
@@ -52,7 +74,6 @@
   details summary::-webkit-details-marker {
     @apply hidden;
   }
-
 }
 
 @layer components {
@@ -86,46 +107,46 @@
 
   @keyframes fadeIn {
     0% {
-      opacity: 0;
+      @apply opacity-0;
     }
     100% {
-      opacity: 1;
+      @apply opacity-100;
     }
   }
 
   @-moz-keyframes fadeIn {
     0% {
-      opacity: 0;
+      @apply opacity-0;
     }
     100% {
-      opacity: 1;
+      @apply opacity-100;
     }
   }
 
   @-webkit-keyframes fadeIn {
     0% {
-      opacity: 0;
+      @apply opacity-0;
     }
     100% {
-      opacity: 1;
+      @apply opacity-100;
     }
   }
 
   @-o-keyframes fadeIn {
     0% {
-      opacity: 0;
+      @apply opacity-0;
     }
     100% {
-      opacity: 1;
+      @apply opacity-100;
     }
   }
 
   @-ms-keyframes fadeIn {
     0% {
-      opacity: 0;
+      @apply opacity-0;
     }
     100% {
-      opacity: 1;
+      @apply opacity-100;
     }
   }
 
@@ -137,66 +158,48 @@
 
   .atom-spinner,
   .atom-spinner * {
-    box-sizing: border-box;
+    @apply box-border;
   }
 
   .atom-spinner {
     /* @apply h-14 w-14 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14; */
-    height: 40px;
-    width: 40px;
-    overflow: hidden;
+    @apply w-10 h-10 overflow-hidden;
   }
 
   @media screen(sm) {
     .atom-spinner {
-      height: 20px;
-      width: 20px;
+      @apply h-5 w-5;
     }
   }
 
   @media screen(md) {
     .atom-spinner {
-      height: 30px;
-      width: 30px;
+      @apply h-8 w-8;
     }
   }
 
   @media screen(lg) {
     .atom-spinner {
-      height: 40px;
-      width: 40px;
+      @apply h-10 w-10;
     }
   }
 
   .atom-spinner .spinner-inner {
-    position: relative;
-    display: block;
-    /* @apply h-full w-full sm:h-3/5 sm:w-3/5 md:h-4/5 md:w-4/5 lg:h-full lg:w-full; */
-    height: 100%;
-    width: 100%;
+    @apply relative block h-full w-full;
   }
 
   .atom-spinner .spinner-circle {
-    @apply text-brunswick-green;
-    display: block;
-    position: absolute;
-    /* color: #ff1d5e; */
+    @apply text-brunswick-green block absolute top-1/2 left-1/2;
     font-size: calc(60px * 0.24);
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
   }
 
   .atom-spinner .spinner-line {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    @apply border-brunswick-green absolute w-full h-full;
     border-radius: 50%;
     animation-duration: 1s;
     border-left-width: calc(60px / 25);
     border-top-width: calc(60px / 25);
-    @apply border-brunswick-green;
-    /* border-left-color: #ff1d5e; */
     border-left-style: solid;
     border-top-style: solid;
     border-top-color: transparent;
@@ -235,8 +238,10 @@
     }
   }
   /* Revisit .section's responsive design */
+  /* Section is for the section containers in the page */
+
   .section {
-    @apply w-auto h-auto p-10 sm:px-20 md:px-40 lg:px-60 sm:py-8 md:py-16 lg:py-24;
+    @apply w-auto h-auto p-5 sm:px-14 md:px-28 lg:px-60 sm:py-8 md:py-12 lg:py-16;
   }
   .header-links {
     @apply w-auto h-auto align-middle text-ocean-green-two motion-safe:animate-pulse hover:text-turquoise-green;
@@ -250,15 +255,15 @@
   }
 
   .sub-header {
-    @apply bg-ocean-green p-1 rounded-md;
+    @apply bg-ocean-green bg-gradient-to-r from-ocean-green to-turquoise-green-two p-2 rounded-lg;
   }
 
+  /* Revisit .card's responsive design */
   .card {
     @apply bg-turquoise-green-two p-8 rounded-2xl shadow-3xl;
   }
 
-
-  /* https://codepen.io/dig-lopes/pen/WLVGda */
+  /* Credit: https://codepen.io/dig-lopes/pen/WLVGda */
   .icon {
     /* @apply bg-turquoise-green; */
     border-radius: 50%;
@@ -284,6 +289,18 @@
     color: #40916c;
     box-shadow: 0 0 5px #40916c;
     text-shadow: 0 0 5px #40916c;
+  }
+
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    isibility: hidden;
+    transition: opacity 0.2s ease-out, transform 0.6s ease-out;
+    will-change: opacity, visibility;
+  }
+
+  .fade-in-section.is-visible {
+    @apply opacity-100 transform-none visible flex;
   }
 }
 

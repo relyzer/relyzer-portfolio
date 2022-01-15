@@ -1,9 +1,14 @@
-import React from "react";
+import React, { RefObject } from "react";
 
 import { Skill } from "../../interfaces/skills";
 import SkillDetail from "./sub-section/SkillDetail";
+import { ForwardLink } from "../elements/button";
 
-const Skills = () => {
+type Props = {
+  ref?: RefObject<HTMLInputElement>;
+};
+
+const Skills = ({ ref }: Props) => {
   const programmingArr: Skill[] = [
     {
       filePath: "/html5_icon.svg",
@@ -136,7 +141,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skill" className="section">
+    <section id="skill" ref={ref} className="section">
       <div className="w-auto h-auto flex-auto card">
         <h2 className="sub-header">My Skills</h2>
         <h3 className="text-center font-semibold p-4">
@@ -226,6 +231,7 @@ const Skills = () => {
           </div>
         </details>
       </div>
+      <ForwardLink href="#portfolio" title="projects" />
     </section>
   );
 };

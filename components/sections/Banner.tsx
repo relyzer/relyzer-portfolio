@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="w-auto m-auto h-screen p-20 rounded-b-xl">
+    <section className="flex justify-center items-center -mt-12 h-screen p-20 rounded-b-xl">
       <div className="">
         <div className="absolute atom-spinner atom-position">
           <div className="spinner-inner">
@@ -12,12 +12,10 @@ const Banner = () => {
             <div className="spinner-circle">&#9679;</div>
           </div>
         </div>
-        <h1 className="font-extrabold text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl p-2">
-          Kev&#305;n Tan
-        </h1>
-        <h3 className="font-medium text-center text-base sm:text-lg md:text-lg lg:text-2xl p-4 fade-in-text">
-          Software Engineer
-        </h3>
+        <h1 className="font-extrabold text-center p-2">Kev&#305;n Tan</h1>
+        <h2 className="font-medium text-center p-4 fade-in-text">
+          Software Engineer | UX Designer
+        </h2>
       </div>
     </section>
   );
