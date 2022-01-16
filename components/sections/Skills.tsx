@@ -147,88 +147,32 @@ const Skills = ({ ref }: Props) => {
         <h3 className="text-center font-semibold p-4">
           Programming/Markup languages
         </h3>
-        <div className="text-center space-x-10">
-          {programmingArr.map((skill: Skill) => (
-            <SkillDetail
-              filePath={skill.filePath}
-              altText={skill.altText}
-              caption={skill.caption}
-            />
-          ))}
-        </div>
+        <SkillDetail arr={programmingArr} />
 
         <h3 className="text-center font-semibold p-4">
           Front-end Technologies
         </h3>
-        <div className="text-center space-x-10">
-          {frontendArr.map((skill: Skill) => (
-            <SkillDetail
-              filePath={skill.filePath}
-              altText={skill.altText}
-              caption={skill.caption}
-            />
-          ))}
-        </div>
+        <SkillDetail arr={frontendArr} />
 
         <h3 className="text-center font-semibold p-4">Back-end Technologies</h3>
-        <div className="text-center space-x-10">
-          {backendArr.map((skill: Skill) => (
-            <SkillDetail
-              filePath={skill.filePath}
-              altText={skill.altText}
-              caption={skill.caption}
-            />
-          ))}
-        </div>
+        <SkillDetail arr={backendArr} />
 
         <h3 className="text-center font-semibold p-4">
           Mobile App Technologies
         </h3>
-        <div className="text-center space-x-10">
-          {mobileArr.map((skill: Skill) => (
-            <SkillDetail
-              filePath={skill.filePath}
-              altText={skill.altText}
-              caption={skill.caption}
-            />
-          ))}
-        </div>
+        <SkillDetail arr={mobileArr} />
 
         <h3 className="text-center font-semibold p-4">UI/UX Design</h3>
-        <div className="text-center space-x-10">
-          {designArr.map((skill: Skill) => (
-            <SkillDetail
-              filePath={skill.filePath}
-              altText={skill.altText}
-              caption={skill.caption}
-            />
-          ))}
-        </div>
+        <SkillDetail arr={designArr} />
 
         <h3 className="text-center font-semibold p-4">DevOps</h3>
-        <div className="text-center space-x-10">
-          {devOpsArr.map((skill: Skill) => (
-            <SkillDetail
-              filePath={skill.filePath}
-              altText={skill.altText}
-              caption={skill.caption}
-            />
-          ))}
-        </div>
+        <SkillDetail arr={devOpsArr} />
 
         <details>
           <summary className="text-center font-semibold p-4 cursor-pointer">
             Others (Click to reveal)
           </summary>
-          <div className="text-center space-x-10">
-            {othersArr.map((skill: Skill) => (
-              <SkillDetail
-                filePath={skill.filePath}
-                altText={skill.altText}
-                caption={skill.caption}
-              />
-            ))}
-          </div>
+          <SkillDetail arr={othersArr} />
         </details>
       </div>
       <ForwardLink href="#portfolio" title="projects" />
