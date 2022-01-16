@@ -56,7 +56,7 @@ const Experience = ({ ref }: Props) => {
           />
         ))}
       </div>
-      <ForwardLink href="#skill"  title="skills"/>
+      <ForwardLink href="#skill" title="skills" />
     </section>
   );
 };

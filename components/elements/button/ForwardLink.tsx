@@ -1,7 +1,7 @@
 import React, { RefObject } from "react";
 import Link from "next/link";
 
-import { randomiser } from "../../../lib/utility/randomiser"
+import { randomiser } from "../../../lib/utility/randomiser";
 
 type Props = {
   href: string;
@@ -10,16 +10,18 @@ type Props = {
 
 const ForwardLink = ({ href, title }: Props) => {
   const prefixes = [
-    'See my',
-    'Check out my',
-    'Look at my',
-    'Go to...',
-    'Scroll to...',
-  ]
+    "See my",
+    "Check out my",
+    "Look at my",
+    "Go to...",
+    "Scroll to...",
+  ];
   return (
     <div className="flex m-auto justify-center mt-10">
       <Link href={href}>
-        <a className="next-button">{title ? `${randomiser(prefixes)} ${title}!` : `Next!`}</a>
+        <a className="next-button">
+          {title ? `${randomiser(prefixes)} ${title}!` : `Next!`}
+        </a>
       </Link>
     </div>
   );
