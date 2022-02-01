@@ -3,6 +3,7 @@ import React, { RefObject } from "react";
 import { Experience, Education } from "../../interfaces/experience";
 import ExperienceDetail from "./sub-section/ExperienceDetail";
 import { ForwardLink } from "../elements/button";
+import FadeInSection from "../animation/FadeInSection";
 
 type Props = {
   ref?: RefObject<HTMLInputElement>;
@@ -33,31 +34,33 @@ const Experience = ({ ref }: Props) => {
     },
   ];
   return (
-    <section id="experience" ref={ref} className="section">
-      <div className="w-auto h-auto flex-auto card">
-        {/* Experience section */}
-        <h2 className="sub-header">Experience</h2>
-        {experienceArr.map((job: Experience) => (
-          <ExperienceDetail
-            title={job.company}
-            subTitle={job.location}
-            detail={job.title}
-            subDetail={job.duration}
-          />
-        ))}
-        {/* Education section */}
-        <h2 className="sub-header">Education</h2>
-        {educationArr.map((edu: Education) => (
-          <ExperienceDetail
-            title={edu.school}
-            subTitle={edu.location}
-            detail={edu.course}
-            subDetail={edu.detail}
-          />
-        ))}
-      </div>
-      <ForwardLink href="#skill" title="skills" />
-    </section>
+    <FadeInSection>
+      <section id="experience" ref={ref} className="section">
+        <div className="w-auto h-auto flex-auto card">
+          {/* Experience section */}
+          <h2 className="sub-header">Experience</h2>
+          {experienceArr.map((job: Experience) => (
+            <ExperienceDetail
+              title={job.company}
+              subTitle={job.location}
+              detail={job.title}
+              subDetail={job.duration}
+            />
+          ))}
+          {/* Education section */}
+          <h2 className="sub-header">Education</h2>
+          {educationArr.map((edu: Education) => (
+            <ExperienceDetail
+              title={edu.school}
+              subTitle={edu.location}
+              detail={edu.course}
+              subDetail={edu.detail}
+            />
+          ))}
+        </div>
+        <ForwardLink href="#skill" title="skills" />
+      </section>
+    </FadeInSection>
   );
 };
 

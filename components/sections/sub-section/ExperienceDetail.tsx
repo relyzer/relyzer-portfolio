@@ -14,10 +14,10 @@ const ExperienceDetail = (props: Props) => {
         <strong>{props.title}</strong>
         <span className="text-right">{props.subTitle}</span>
       </h3>
-      <p className="leading-8 flex justify-between">
+      <h4 className="leading-8 flex justify-between">
         {props.detail}
         <span className="text-right">{props.subDetail}</span>
-      </p>
+      </h4>
     </div>
   );
 };

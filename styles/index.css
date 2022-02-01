@@ -46,7 +46,7 @@
   }
 
   body {
-    @apply p-0 m-0 bg-turquoise-green min-h-screen flex flex-col;
+    @apply p-0 m-0 /* bg-turquoise-green */ bg-gradient-to-t from-dark-jungle-green via-ocean-green-two to-nyanza min-h-screen flex flex-col;
   }
 
   * {
@@ -148,6 +148,85 @@
     100% {
       @apply opacity-100;
     }
+    
+  }
+
+  .hovering-image {
+    animation: hovering 8s ease-in-out infinite;
+    -webkit-animation: hovering 8s ease-in-out infinite;
+    -moz-animation: hovering 8s ease-in-out infinite;
+    -o-animation: hovering 8s ease-in-out infinite;
+    -ms-animation: hovering 8s ease-in-out infinite;
+  }
+
+  @keyframes hovering {
+    0% {
+      transform: translatey(-16px);
+    }
+
+    50% {
+      transform: translatey(16px);
+    }
+
+    100% {
+      transform: translatey(-16px);
+    }
+  }
+
+  @-moz-keyframes hovering {
+    0% {
+      transform: translatey(-16px);
+    }
+
+    50% {
+      transform: translatey(16px);
+    }
+
+    100% {
+      transform: translatey(-16px);
+    }
+  }
+
+  @-webkit-keyframes hovering {
+    0% {
+      transform: translatey(-16px);
+    }
+
+    50% {
+      transform: translatey(16px);
+    }
+
+    100% {
+      transform: translatey(-16px);
+    }
+  }
+
+  @-o-keyframes hovering {
+    0% {
+      transform: translatey(-16px);
+    }
+
+    50% {
+      transform: translatey(16px);
+    }
+
+    100% {
+      transform: translatey(-16px);
+    }
+  }
+
+  @-ms-keyframes hovering {
+    0% {
+      transform: translatey(-16px);
+    }
+
+    50% {
+      transform: translatey(16px);
+    }
+
+    100% {
+      transform: translatey(-16px);
+    }
   }
 
   .atom-position {
@@ -241,10 +320,10 @@
   /* Section is for the section containers in the page */
 
   .section {
-    @apply w-auto h-auto p-5 sm:px-14 md:px-28 lg:px-60 sm:py-8 md:py-12 lg:py-16;
+    @apply w-auto h-auto p-5 sm:px-14 md:px-28 lg:px-28 xl:px-56 2xl:px-96 sm:py-8 md:py-12 lg:py-14 xl:py-28 2xl:py-48;
   }
   .header-links {
-    @apply w-auto h-auto align-middle text-ocean-green-two motion-safe:animate-pulse hover:text-turquoise-green;
+    @apply w-auto h-auto align-middle text-ocean-green-two motion-safe:animate-pulse hover:text-turquoise-green transition-colors;
   }
   .next-button {
     @apply border-2 border-black bg-black px-5 py-2 text-ocean-green-two rounded-md hover:bg-turquoise-green hover:text-black;

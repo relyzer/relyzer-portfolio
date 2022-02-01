@@ -3,8 +3,8 @@ import React from "react";
 const Banner = () => {
   return (
     <section className="flex justify-center items-center -mt-12 h-screen p-20 rounded-b-xl">
-      <div className="">
-        <div className="absolute atom-spinner atom-position">
+      <div className="relative">
+        <div className="absolute atom-spinner atom-position left-28 bottom-30 sm:left-[137px] md:left-[125px] lg:left-[158px]">
           <div className="spinner-inner">
             <div className="spinner-line"></div>
             <div className="spinner-line"></div>
