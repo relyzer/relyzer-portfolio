@@ -10,25 +10,18 @@ import {
   Portfolio,
   Contact,
 } from "../components/sections/index";
-import FadeInSection from "../components/FadeInSection";
 
 const IndexPage = () => {
-  const aboutRef = useRef(null)
+  const aboutRef = useRef(null);
 
   return (
     <Layout title="Kevin Tan - Software Engineer | UX Designer">
-      <FadeInSection>
-        <Banner />
-        <About ref={aboutRef} />
-        <hr />
-        <Experience /* ref={domRef} */ />
-        <hr />
-        <Skills /* ref={domRef} */ />
-        <hr />
-        <Portfolio /* ref={domRef} */ />
-        <hr />
-        <Contact /* ref={domRef} */ />
-      </FadeInSection>
+      <Banner />
+      <About ref={aboutRef} />
+      <Experience /* ref={domRef} */ />
+      <Skills /* ref={domRef} */ />
+      <Portfolio /* ref={domRef} */ />
+      <Contact /* ref={domRef} */ />
     </Layout>
   );
 };

@@ -3,6 +3,7 @@ import React, { RefObject } from "react";
 import { Skill } from "../../interfaces/skills";
 import SkillDetail from "./sub-section/SkillDetail";
 import { ForwardLink } from "../elements/button";
+import FadeInSection from "../animation/FadeInSection";
 
 type Props = {
   ref?: RefObject<HTMLInputElement>;
@@ -141,42 +142,46 @@ const Skills = ({ ref }: Props) => {
   ];
 
   return (
-    <section id="skill" ref={ref} className="section">
-      <div className="w-auto h-auto flex-auto card">
-        <h2 className="sub-header">My Skills</h2>
-        <h3 className="text-center font-semibold p-4">
-          Programming/Markup languages
-        </h3>
-        <SkillDetail arr={programmingArr} />
+    <FadeInSection>
+      <section id="skill" ref={ref} className="section">
+        <div className="w-auto h-auto flex-auto card">
+          <h2 className="sub-header">My Skills</h2>
+          <h3 className="text-center font-semibold p-4">
+            Programming/Markup languages
+          </h3>
+          <SkillDetail arr={programmingArr} />
 
-        <h3 className="text-center font-semibold p-4">
-          Front-end Technologies
-        </h3>
-        <SkillDetail arr={frontendArr} />
+          <h3 className="text-center font-semibold p-4">
+            Front-end Technologies
+          </h3>
+          <SkillDetail arr={frontendArr} />
 
-        <h3 className="text-center font-semibold p-4">Back-end Technologies</h3>
-        <SkillDetail arr={backendArr} />
+          <h3 className="text-center font-semibold p-4">
+            Back-end Technologies
+          </h3>
+          <SkillDetail arr={backendArr} />
 
-        <h3 className="text-center font-semibold p-4">
-          Mobile App Technologies
-        </h3>
-        <SkillDetail arr={mobileArr} />
+          <h3 className="text-center font-semibold p-4">
+            Mobile App Technologies
+          </h3>
+          <SkillDetail arr={mobileArr} />
 
-        <h3 className="text-center font-semibold p-4">UI/UX Design</h3>
-        <SkillDetail arr={designArr} />
+          <h3 className="text-center font-semibold p-4">UI/UX Design</h3>
+          <SkillDetail arr={designArr} />
 
-        <h3 className="text-center font-semibold p-4">DevOps</h3>
-        <SkillDetail arr={devOpsArr} />
+          <h3 className="text-center font-semibold p-4">DevOps</h3>
+          <SkillDetail arr={devOpsArr} />
 
-        <details>
-          <summary className="text-center font-semibold p-4 cursor-pointer">
-            Others (Click to reveal)
-          </summary>
-          <SkillDetail arr={othersArr} />
-        </details>
-      </div>
-      <ForwardLink href="#portfolio" title="projects" />
-    </section>
+          <details>
+            <summary className="text-center font-semibold p-4 cursor-pointer">
+              Others (Click to reveal)
+            </summary>
+            <SkillDetail arr={othersArr} />
+          </details>
+        </div>
+        <ForwardLink href="#portfolio" title="projects" />
+      </section>
+    </FadeInSection>
   );
 };
 
