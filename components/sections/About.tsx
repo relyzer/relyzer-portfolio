@@ -3,13 +3,13 @@ import Image from "next/image";
 import FadeInSection from "../animation/FadeInSection";
 
 type Props = {
-  ref?: RefObject<HTMLInputElement>;
+  // ref?: RefObject<HTMLInputElement>;
 };
 
-const About = ({ ref }: Props) => {
+const About = ({}: Props) => {
   return (
     <FadeInSection>
-      <section id="about" ref={ref} className="section lg:flex">
+      <section id="about" className="section lg:flex">
         {/* Something wrong with the large breakpoint. Check the responsiveness for it again. */}
         <div className="lg:flex-none px-20 sm:p-18 md:px-24 md:py-4 md:mr-4 lg:p-1 lg:mr-10 md:self-center hovering-image">
           <figure className="lg:w-[20vw]">
