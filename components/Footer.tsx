@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-black mt-auto p-2">
       <div className="flex">
-        <div className="flex-1 font-sans text-ocean-green motion-safe:animate-pulse text-left ml-7">
+        <div className="flex-1 font-sans text-ocean-green motion-safe:animate-pulse text-left leading-8 pl-8">
           Website by <strong>Kevin Tan</strong>
         </div>
         <div className="flex-1 text-right text-3xl text-illuminating-emerald">

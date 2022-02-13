@@ -12,12 +12,11 @@ import {
 } from "../components/sections/index";
 
 const IndexPage = () => {
-  const aboutRef = useRef(null);
 
   return (
     <Layout title="Kevin Tan - Software Engineer | UX Designer">
       <Banner />
-      <About ref={aboutRef} />
+      <About />
       <Experience /* ref={domRef} */ />
       <Skills /* ref={domRef} */ />
       <Portfolio /* ref={domRef} */ />
