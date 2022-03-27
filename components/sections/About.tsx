@@ -29,20 +29,12 @@ const About = ({}: Props) => {
         <div className="w-auto h-auto flex-auto card">
           <h2 className="sub-header">About Me</h2>
           <h4 className="px-4 pt-4 leading-10 font-semibold text-3xl">
-            Hey there, I'm <u>Kevin</u>.<br />I enjoy designing and creating my
-            very own digital products!
+            Hey there, I'm <u>Kevin</u>.<br />I enjoy designing and creating digital products!
           </h4>
           <p className="px-4 pb-4 leading-7">
             <br />
-            Ever passionate about tech and art since young - from playing StarCraft 1 (a real-time strategy video game) at the age of
-            3, to adding widgets and scripts to my blogspot site during my adolescence.
-            <br />
-            As a mechanical engineering student in 2013, I was intrigued with
-            the idea of developing my own iOS mobile app. <br />
-            My first foray into tech began by installing Xcode
-            and tinkering with iOS programming. It eventually led to my decision
-            during my military service, to enroll for a tech degree out of
-            interest.
+            An IT graduate with professional full-stack software engineering experience in the area of web application development.
+            Previously, I was a mechanical engineering student who developed a passion for technology through tinkering with iOS programming. It led to my decision to enroll for a tech degree!
             <br /> <br />
             Check out some of the projects I have created!
           </p>

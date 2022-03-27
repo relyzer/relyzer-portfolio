@@ -1,4 +1,5 @@
 export interface Experience {
+  id: string;
   company: string;
   location: string;
   title: string;
@@ -6,6 +7,7 @@ export interface Experience {
 }
 
 export interface Education {
+  id: string;
   school: string;
   location: string;
   course: string;

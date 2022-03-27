@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import Link from "next/link";
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,7 +9,7 @@ type Props = {
 };
 
 const Layout = ({ children, title = "Default title" }: Props) => (
-  <div>
+  <>
     <Head>
       <title>{title}</title>
       <link
@@ -36,6 +35,10 @@ const Layout = ({ children, title = "Default title" }: Props) => (
         href="/favicon_package_v0.16/safari-pinned-tab.svg"
         color="#5bbad5"
       />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+      ></link>
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
 
@@ -45,33 +48,13 @@ const Layout = ({ children, title = "Default title" }: Props) => (
         src="https://kit.fontawesome.com/fd07a2fb4b.js"
         crossOrigin="anonymous"
       ></script>
-      <script src="../lib/webGL/UnityLoader.js"></script>
     </Head>
-    <body>
-      <Header />
+    <Header />
+    <div className="">
       <main>{children}</main>
-      <Footer />
-    </body>
-  </div>
+    </div>
+    <Footer />
+  </>
 );
 
 export default Layout;
-
-/* import Head from 'next/head'
-import Header from './Header'
-
-export default function Layout({ children, pageTitle, description, ...props }) {
-  return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <title>{pageTitle}</title>
-      </Head>
-      <section>
-        <Header />
-        <div className="content">{children}</div>
-      </section>
-    </>
-  )
-} */

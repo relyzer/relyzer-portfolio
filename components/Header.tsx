@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { SoundButton, MuteButton } from "./elements/button";
 
+// To-do: Apply responsive designs to links and buttons!
+
 const Header = () => {
   const [enableSound, setEnableSound] = useState(true);
   const onMuteClick = () => {
@@ -14,7 +16,6 @@ const Header = () => {
     }
   };
   return (
-    <header className="w-auto">
       <div className="flex flex-row rounded-b-3xl bg-black w-full">
         <div className="basis-1/3"></div>
         <nav className="basis-1/3 p-2 w-full h-full text-center font-medium text-lg align-middle space-x-8 lg:space-x-12">
@@ -40,10 +41,9 @@ const Header = () => {
           </Link>
         </nav>
         <div className="basis-1/3 align-middle text-right">
-          <MuteButton handleMute={onMuteClick} className="text-white px-4 py-2 text-lg " isSoundEnabled={enableSound} />
+          <MuteButton handleMute={onMuteClick} className="mr-6 p-2 text-lg text-ocean-green-two motion-safe:animate-pulse hover:text-turquoise-green transition-colors" isSoundEnabled={enableSound} />
         </div>
       </div>
-    </header>
   );
 };
 

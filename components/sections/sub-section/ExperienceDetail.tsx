@@ -1,6 +1,7 @@
 import React from "react";
 
 type Props = {
+  key: string;
   title: string;
   subTitle?: string;
   detail: string;
