@@ -10,13 +10,14 @@ const SkillDetail = ({ arr }: Props) => {
   return (
     <div className="text-center space-x-10">
       {arr.map((skill: Skill) => (
-        <figure className="inline-block">
-          <Image
+        <figure className="inline-block" key={skill.id}>
+          {/* <Image
             src={skill.filePath}
             alt={skill.altText}
             width={60}
             height={60}
-          ></Image>
+          ></Image> */}
+          <i className={skill.devicon}></i>
           <figcaption className="">{skill.caption}</figcaption>
         </figure>
       ))}
