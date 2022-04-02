@@ -61,6 +61,9 @@ module.exports = {
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... } */
+        'mobileS': '320px',
+        'mobileM': '375px',
+        'mobileL': '425px',
         'xl': '1440px',
         '2xl': '2560px',
       },

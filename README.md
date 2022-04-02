@@ -8,11 +8,9 @@ As my skills improve, I hope to add more cool features to my site, so stay tuned
 
 1.) Modify contents and reduce clutter  
 2.) Make it prettier!  
-3.) Fix some UX issues  
-4.) Get Unity WebGL working if possible. Relatively difficult as unity projects to be displayed, are of older versions. May need to get it to update.  
-5.) Add links to projects and display in a nice component  
-6.) Fix responsive issue of the spinner animation and the name in the banner section  
-7.) Fix all responsiveness of the layouts and sections  
+3.) Fix responsive issue of the spinner animation and the name in the banner section  
+4.) Fix all responsiveness of the layouts and sections  
+5.) Separate the data into another folder/fileset from the components (SOC principle)
 
 ## Website initially started from:
 

@@ -1,7 +1,7 @@
 import React, { RefObject } from "react";
 
 import { Experience, Education } from "../../interfaces/experience";
-import ExperienceDetail from "./sub-section/ExperienceDetail";
+import { ExperienceDetail } from "./sub-section";
 import { ForwardLink } from "../elements/button";
 import FadeInSection from "../animation/FadeInSection";
 import generateUniqueID from "../../lib/utility/generateUniqueID";
@@ -17,7 +17,7 @@ const Experience = ({ ref }: Props) => {
       company: "M1 Limited",
       location: "Singapore",
       title: "Software Engineer",
-      duration: "Mar 2021 - Present",
+      duration: "Mar 2021 - Mar 2022",
     },
     {
       id: generateUniqueID(),

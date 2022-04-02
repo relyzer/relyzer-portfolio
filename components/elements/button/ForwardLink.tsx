@@ -19,7 +19,10 @@ const ForwardLink = ({ href, title }: Props) => {
   return (
     <div className="flex m-auto justify-center mt-10">
       <Link href={href}>
-        <a className="next-button">
+        <a
+          className="border-2 border-black bg-black px-5 py-2 text-ocean-green-two rounded-md hover:bg-turquoise-green hover:text-black transition-colors"
+          suppressHydrationWarning
+        >
           {title ? `${randomiser(prefixes)} ${title}!` : `Next!`}
         </a>
       </Link>
