@@ -10,7 +10,7 @@ type Props = {
 
 const FadeInSection = ({ children }: Props) => {
   const [ref, inView, entry] = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
     triggerOnce: true,
   });
 
@@ -19,6 +19,7 @@ const FadeInSection = ({ children }: Props) => {
     hidden: {
       opacity: 0,
       scale: 0.85,
+      // scale: 0.85,
       // x: Number(randomiser([50, -50])),
       // y: 50,
     },

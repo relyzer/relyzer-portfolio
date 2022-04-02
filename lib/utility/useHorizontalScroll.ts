@@ -11,7 +11,7 @@ export function useHorizontalScroll() {
         event.preventDefault();
         el.scrollTo({
           left: el.scrollLeft + event.deltaY,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       };
       el.addEventListener("wheel", onWheel);

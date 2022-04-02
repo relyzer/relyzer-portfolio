@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Document, Page, pdfjs} from "react-pdf";
+import { Document, Page, pdfjs } from "react-pdf";
 
 // import workerSrc from "../../pdf-worker";
 
@@ -21,16 +21,22 @@ const PdfViewer = ({ filename, width, id }: Props) => {
   //   setFile(event.target.files[0]);
   // };
 
-  const onDocumentLoadSuccess = ({ numPages}) => {
+  const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
   };
 
   return (
-      <Document file={file} onLoadSuccess={onDocumentLoadSuccess} >
-        {Array.from({ length: numPages }, (_, index) => (
-          <Page key={id} pageNumber={index + 1} width={width} renderTextLayer={false} renderAnnotationLayer={false} />
-        ))}
-      </Document>
+    <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+      {Array.from({ length: numPages }, (_, index) => (
+        <Page
+          key={id}
+          pageNumber={index + 1}
+          width={width}
+          renderTextLayer={false}
+          renderAnnotationLayer={false}
+        />
+      ))}
+    </Document>
   );
 };
 

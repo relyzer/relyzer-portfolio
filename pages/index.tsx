@@ -12,7 +12,6 @@ import {
 } from "../components/sections/index";
 
 const IndexPage = () => {
-
   return (
     <Layout title="Kevin Tan - Software Engineer | UX Designer">
       <Banner />

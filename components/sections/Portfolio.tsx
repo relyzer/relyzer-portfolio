@@ -1,28 +1,86 @@
 import React, { RefObject } from "react";
-import Link from "next/link";
 
 import { ForwardLink } from "../elements/button";
 import FadeInSection from "../animation/FadeInSection";
-import Project from "./sub-section/Project";
+import { ProjectDetail } from "./sub-section";
+import { Project } from "../../interfaces/project";
+import generateUniqueID from "../../lib/utility/generateUniqueID";
 
 type Props = {
   ref?: RefObject<HTMLInputElement>;
 };
+// To-do: Open external links in a new tab
 
 const Portfolio = ({ ref }: Props) => {
-  const placeholderArr = [];
+  const projectArr: Project[] = [
+    {
+      id: generateUniqueID(),
+      title: "Portfolio Website",
+      description:
+        "A personal website about myself and to showcase my projects.\nComes with Unity WebGL for gameplay demonstration and PDFs to display my online certificates.",
+      snapshotUrl: "/images/Portfolio_website.png",
+      githubUrl: "https://github.com/relyzer/relyzer.github.io",
+      techStack: [
+        {
+          tech: "TypeScript",
+          devicon: "devicon-typescript-plain",
+        },
+        {
+          tech: "Next.js",
+          devicon: "devicon-nextjs-original",
+        },
+        {
+          tech: "React.js",
+          devicon: "devicon-react-original",
+        },
+        {
+          tech: "TailwindCSS",
+          devicon: "devicon-tailwindcss-plain",
+        },
+      ],
+      tags: ["Web Development"],
+      redirectExternal: true,
+    },
+    {
+      id: generateUniqueID(),
+      title: "Amprise",
+      description:
+        "An outdoor-social mobile application designed to connect people and the environment around them.\nThe word 'Amprise' is a twist on 'emprise', which is a synonym to the words 'adventure', 'undertaking', 'quest'.\nTake a look at the UX case study for more information!",
+      demoUrl: "http://uxfol.io/p/kevintyh/045b2e10",
+      snapshotUrl: "/images/Amprise-ux.png",
+      techStack: [
+        {
+          tech: "Swift",
+          devicon: "devicon-swift-plain",
+        },
+      ],
+      tags: ["Mobile App Development", "UI/UX Design"],
+      demoButtonText: "UX case study",
+      redirectExternal: true,
+    },
+    {
+      id: generateUniqueID(),
+      title: "Citadel VR Experience",
+      description:
+        "A project where I did 3D-modeling and learn about Vuforia virtual reality toolkit (VRTK)!\nClick on the demo to run the unity build.\nNote: Demo contains sound and may not be optimised for certain devices.",
+      demoUrl: "/citadel",
+      snapshotUrl: "/images/vr-demo-1.png",
+      techStack: [
+        {
+          tech: "Unity",
+          devicon: "devicon-unity-original",
+        },
+      ],
+      tags: ["Unity game engine", "Game Design"],
+      redirectExternal: false,
+    },
+  ];
   return (
     <FadeInSection>
       <section id="portfolio" ref={ref} className="section">
         <div className="w-auto h-auto flex-auto card">
           <h2 className="sub-header">Portfolio</h2>
-
-          <Project
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            snapshotUrl="https://images.unsplash.com/photo-1485178575877-1a13bf489dfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1401&q=80"
-            techStack={placeholderArr}
-          />
+          <ProjectDetail arr={projectArr} />
         </div>
         <ForwardLink href="#contact" />
       </section>
