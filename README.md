@@ -41,7 +41,7 @@ npm run dev
 
 Next.js: https://nextjs.org/docs/getting-started  
 React.js: https://reactjs.org/docs/getting-started.html  
-TailwindCSS: https://tailwindcss.com/docs/installation
+TailwindCSS: https://tailwindcss.com/docs/installation  
 
 For button sound effects:  
 Great short tutorial with easy-to-use hooks!  
