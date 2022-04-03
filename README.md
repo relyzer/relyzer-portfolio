@@ -47,6 +47,10 @@ For button sound effects:
 Great short tutorial with easy-to-use hooks!  
 Use-sound / Howler.js: https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/
 
+Devicon: https://devicon.dev/  
 Fontawesome: https://fontawesome.com/v6.0
+React intersection observer: https://www.npmjs.com/package/react-intersection-observer  
+React-pdf: https://github.com/wojtekmaj/react-pdf#readme
 
+Animations:  
 Epic Spinners: https://epic-spinners.epicmax.co/
