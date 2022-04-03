@@ -1,17 +1,14 @@
-name: Node.js CI
+name: Build and Deploy
 
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [dev]
   pull_requests:
     branches: [main]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix: node-version: [17.x]
 
     steps:
       - name: Checkout
@@ -24,11 +21,12 @@ jobs:
           cache: 'npm'
 
       - name: Install and Build
-        run: npm build && npm export
+        run: npm install && npm run build && npm run export
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          branch: gh-pages
-          folder: out
-          clean: true
+          DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          BRANCH: gh-pages
+          FOLDER: out
+          CLEAN: true
