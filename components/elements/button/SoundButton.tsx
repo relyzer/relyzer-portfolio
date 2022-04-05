@@ -14,7 +14,7 @@ const SoundButton = (prop: Props) => {
   const [playbackRate] = React.useState(1.4);
   const [play] = useSound("./button_sound.wav", {
     playbackRate,
-    volume: 0.7,
+    volume: 0.5,
     soundEnabled: prop.isSoundEnabled,
   });
   return <button onMouseEnter={() => play()}>{prop.name}</button>;

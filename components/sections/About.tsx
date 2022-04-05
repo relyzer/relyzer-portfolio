@@ -1,12 +1,8 @@
-import React, { forwardRef, RefObject } from "react";
+import React from "react";
 import Image from "next/image";
 import FadeInSection from "../animation/FadeInSection";
 
-type Props = {
-  // ref?: RefObject<HTMLInputElement>;
-};
-
-const About = ({}: Props) => {
+const About = () => {
   return (
     <FadeInSection>
       <section id="about" className="section lg:flex">
@@ -28,24 +24,24 @@ const About = ({}: Props) => {
         </div>
         <div className="w-auto h-auto flex-auto card">
           <h2 className="sub-header">About Me</h2>
-          <h4 className="px-4 pt-4 leading-relaxed font-semibold text-3xl">
-            Hey there, I'm <u>Kevin</u>.
+          <h4 className="px-4 pt-4 leading-relaxed font-semibold">
+            Hello, I'm <u>Kevin</u>.
           </h4>
           <h5 className="px-4 leading-relaxed">
-            I enjoy designing and creating digital products!
+            I love designing and creating digital products.
           </h5>
           <p className="px-4 pb-4 leading-relaxed">
             <br />
             An IT graduate with professional experience in full-stack software
             engineering.
             <br />
-            Previously, I was a mechanical engineering polytechnic student who
-            developed a passion for technology while tinkering with iOS
-            programming. It led to my decision to enroll for a tech degree!
-            <br /> <br />
             I have interests in web, mobile, mixed reality and games
             development. <br />
-            Take a look at some of the projects I have created!
+            Previously, I was a mechanical engineering polytechnic student who
+            developed a passion for technology while tinkering with iOS
+            programming, leading to my decision to enroll for a tech degree.
+            <br /> <br />
+            Take a look at some projects I've created!
           </p>
         </div>
       </section>

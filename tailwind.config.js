@@ -17,14 +17,6 @@ module.exports = {
       "bottle-green": "#2d6a4f",
       "brunswick-green": "#1b4332",
       "dark-jungle-green": "#081c15",
-      // // theme('colors.orange')
-      // orange: {
-      //   // theme('colors.orange.DEFAULT')
-      //   DEFAULT: '#FFD085',
-      //   // theme('colors.orange.light')
-      //   light: '#FEECCF',
-      //   dark: '#FF9E10',
-      // },
       gray: {
         DEFAULT: "#6B7280",
       },
@@ -36,7 +28,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Verdana", "Helvetica", "sans-serif"],
+      sans: ["Futura", "sans-serif"],
       serif: [],
     },
     extend: {
