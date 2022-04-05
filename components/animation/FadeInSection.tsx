@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { randomiser } from "../../lib/utility/randomiser";
 
 // See for framer-motion options: https://www.framer.com/docs/animation/
 type Props = {
@@ -19,9 +18,6 @@ const FadeInSection = ({ children }: Props) => {
     hidden: {
       opacity: 0,
       scale: 0.85,
-      // scale: 0.85,
-      // x: Number(randomiser([50, -50])),
-      // y: 50,
     },
   };
 

@@ -11,10 +11,10 @@ type Props = {
 
 const ProjectDetail = ({ arr }: Props) => {
   return (
-    <>
+    <div className="lg:flex lg:flex-row lg:flex-wrap">
       {arr.map((project: Project) => (
-        <div className="p-4" key={project.id}>
-          <div className="bg-ocean-green rounded-lg p-6">
+        <div className="lg:basis-1/2 p-4" key={project.id}>
+          <div className="bg-ocean-green rounded-lg h-full p-6">
             <figure className="flex justify-center">
               <Image
                 className="rounded-lg"
@@ -23,7 +23,7 @@ const ProjectDetail = ({ arr }: Props) => {
                 src={project.snapshotUrl}
               />
             </figure>
-            <h3 className="p-1 font-bold text-center">{project.title}</h3>
+            <h4 className="p-1 font-bold text-center">{project.title}</h4>
             <div className="flex flex-row flex-wrap">
               {project.tags &&
                 project.tags.map((tag) => (
@@ -75,7 +75,7 @@ const ProjectDetail = ({ arr }: Props) => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

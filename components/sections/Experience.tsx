@@ -2,7 +2,6 @@ import React, { RefObject } from "react";
 
 import { Experience, Education } from "../../interfaces/experience";
 import { ExperienceDetail } from "./sub-section";
-import { ForwardLink } from "../elements/button";
 import FadeInSection from "../animation/FadeInSection";
 import generateUniqueID from "../../lib/utility/generateUniqueID";
 
@@ -71,7 +70,6 @@ const Experience = ({ ref }: Props) => {
             />
           ))}
         </div>
-        <ForwardLink href="#skill" title="skills" />
       </section>
     </FadeInSection>
   );

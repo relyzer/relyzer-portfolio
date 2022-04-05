@@ -1,6 +1,5 @@
 import React, { RefObject } from "react";
 
-import { ForwardLink } from "../elements/button";
 import FadeInSection from "../animation/FadeInSection";
 import { ProjectDetail } from "./sub-section";
 import { Project } from "../../interfaces/project";
@@ -9,7 +8,6 @@ import generateUniqueID from "../../lib/utility/generateUniqueID";
 type Props = {
   ref?: RefObject<HTMLInputElement>;
 };
-// To-do: Open external links in a new tab
 
 const Portfolio = ({ ref }: Props) => {
   const projectArr: Project[] = [
@@ -62,7 +60,7 @@ const Portfolio = ({ ref }: Props) => {
       id: generateUniqueID(),
       title: "Citadel VR Experience",
       description:
-        "A project where I did 3D-modeling and learn about Vuforia virtual reality toolkit (VRTK)!\nClick on the demo to run the unity build.\nNote: Demo contains sound and may not be optimised for certain devices.",
+        "A project where I did 3D-modeling and learn about Vuforia virtual reality toolkit (VRTK).\nClick on the demo to run the unity build.\nNote: Demo contains sound and may not be optimised for certain devices.",
       demoUrl: "/citadel",
       snapshotUrl: "/images/vr-demo-1.png",
       techStack: [
@@ -82,7 +80,6 @@ const Portfolio = ({ ref }: Props) => {
           <h2 className="sub-header">Portfolio</h2>
           <ProjectDetail arr={projectArr} />
         </div>
-        <ForwardLink href="#contact" />
       </section>
     </FadeInSection>
   );

@@ -11,14 +11,14 @@ type Props = {
 const ExperienceDetail = (props: Props) => {
   return (
     <div className="p-4">
-      <h3 className="leading-8 flex justify-between">
+      <h5 className="leading-8 flex justify-between">
         <strong>{props.title}</strong>
         <span className="text-right">{props.subTitle}</span>
-      </h3>
-      <h4 className="leading-8 flex justify-between">
+      </h5>
+      <h6 className="leading-8 flex justify-between">
         {props.detail}
         <span className="text-right">{props.subDetail}</span>
-      </h4>
+      </h6>
     </div>
   );
 };

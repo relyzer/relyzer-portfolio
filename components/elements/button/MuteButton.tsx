@@ -14,7 +14,6 @@ const MuteButton = ({ handleMute, className, isSoundEnabled }: Props) => {
     <button onClick={handleMute} className={className}>
       {isSoundEnabled && (
         <span className="text-sm">
-          Click to mute! &#10140;&nbsp;
           <span className="text-lg">
             <FontAwesomeIcon icon={faVolumeHigh} />
           </span>
@@ -22,7 +21,6 @@ const MuteButton = ({ handleMute, className, isSoundEnabled }: Props) => {
       )}
       {!isSoundEnabled && (
         <span className="text-sm">
-          Click to enable! &#10140;&nbsp;
           <span className="text-lg">
             <FontAwesomeIcon icon={faVolumeXmark} />
           </span>
