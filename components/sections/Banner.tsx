@@ -13,9 +13,9 @@ const Banner = () => {
           </div>
         </div>
         <h1 className="font-extrabold text-center p-2">Kev&#305;n Tan</h1>
-        <h2 className="font-medium text-center p-4 fade-in-text">
+        <h3 className="font-medium text-center p-4 fade-in-text">
           Software Engineer | UX Designer
-        </h2>
+        </h3>
       </div>
     </section>
   );

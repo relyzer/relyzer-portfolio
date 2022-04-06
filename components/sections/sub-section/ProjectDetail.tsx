@@ -15,7 +15,7 @@ const ProjectDetail = ({ arr }: Props) => {
       {arr.map((project: Project) => (
         <div className="lg:basis-1/2 p-4" key={project.id}>
           <div className="bg-ocean-green rounded-lg h-full p-6">
-            <figure className="flex justify-center">
+            <figure className="flex p-2 lg:p-4 justify-center">
               <Image
                 className="rounded-lg"
                 width={500}

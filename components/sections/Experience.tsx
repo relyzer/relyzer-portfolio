@@ -48,7 +48,7 @@ const Experience = ({ ref }: Props) => {
       <section id="experience" ref={ref} className="section">
         <div className="w-auto h-auto flex-auto card">
           {/* Experience section */}
-          <h2 className="sub-header">Experience</h2>
+          <h3 className="sub-header">Experience</h3>
           {experienceArr.map((job: Experience) => (
             <ExperienceDetail
               key={job.id}
@@ -59,7 +59,7 @@ const Experience = ({ ref }: Props) => {
             />
           ))}
           {/* Education section */}
-          <h2 className="sub-header">Education</h2>
+          <h3 className="sub-header">Education</h3>
           {educationArr.map((edu: Education) => (
             <ExperienceDetail
               key={edu.id}
