@@ -13,9 +13,9 @@ const Contact = ({ ref }: Props) => {
     <FadeInSection>
       <section id="contact" ref={ref} className="section">
         <div className="w-auto h-auto flex-auto card">
-          <h2 className="sub-header">Contact</h2>
+          <h3 className="sub-header">Contact</h3>
           <p className="p-4">Reach me through: </p>
-          <div className="flex flex-row flex-wrap text-6xl justify-center">
+          <div className="flex flex-row flex-wrap text-3xl lg:text-6xl 2xl:text-9xl justify-center">
             <Link href="https://www.linkedin.com/in/kevintyh/" passHref={true}>
               <a className="motion-safe:hover:animate-pulse">
                 <FontAwesomeIcon icon={faLinkedin} />

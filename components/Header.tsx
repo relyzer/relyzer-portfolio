@@ -67,7 +67,7 @@ const Header = ({ width }: Props) => {
               </a>
             </Link>
           </nav>
-          <div className="lg:basis-1/4 xl:basis-1/3 align-middle text-right">
+          <div className="lg:basis-1/4 xl:basis-1/3 align-middle text-right flex flex-row-reverse items-center">
             <MuteButton
               handleMute={onMuteClick}
               className="mr-6 p-2 text-base lg:text-lg 2xl:text-xl text-ocean-green-two motion-safe:animate-pulse hover:text-turquoise-green transition-colors"

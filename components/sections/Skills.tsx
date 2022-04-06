@@ -170,7 +170,7 @@ const Skills = ({ ref }: Props) => {
     <FadeInSection>
       <section id="skill" ref={ref} className="section">
         <div className="w-auto h-auto flex-auto card">
-          <h2 className="sub-header">My Skills</h2>
+          <h3 className="sub-header">Skills</h3>
           <h4 className="text-center font-semibold p-4">
             Programming / Mark-up languages
           </h4>
@@ -199,9 +199,11 @@ const Skills = ({ ref }: Props) => {
 
           <details>
             <summary className="text-center font-semibold p-4 cursor-pointer">
-              Others (Click to reveal)
+              Others
             </summary>
-            <SkillDetail arr={othersArr} />
+            <div className="details-div">
+              <SkillDetail arr={othersArr} />
+            </div>
           </details>
         </div>
       </section>

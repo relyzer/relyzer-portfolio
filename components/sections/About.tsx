@@ -6,7 +6,6 @@ const About = () => {
   return (
     <FadeInSection>
       <section id="about" className="section lg:flex">
-        {/* Something wrong with the large breakpoint. Check the responsiveness for it again. */}
         <div className="lg:flex-none px-20 sm:p-18 md:px-24 md:py-4 md:mr-4 lg:p-1 lg:mr-10 md:self-center hovering-image">
           <figure className="lg:w-[20vw]">
             <Image
@@ -23,7 +22,7 @@ const About = () => {
           </figcaption>
         </div>
         <div className="w-auto h-auto flex-auto card">
-          <h2 className="sub-header">About Me</h2>
+          <h3 className="sub-header">About Me</h3>
           <h4 className="px-4 pt-4 leading-relaxed font-semibold">
             Hello, I'm <u>Kevin</u>.
           </h4>
