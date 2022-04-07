@@ -69,7 +69,7 @@ const Portfolio = ({ ref }: Props) => {
           devicon: "devicon-unity-original",
         },
       ],
-      tags: ["Unity game engine", "Game Design"],
+      tags: ["Unity", "Game Design"],
       redirectExternal: false,
     },
   ];

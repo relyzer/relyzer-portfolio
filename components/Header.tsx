@@ -11,7 +11,7 @@ type Props = {
 };
 
 const Header = ({ width }: Props) => {
-  const [enableSound, setEnableSound] = useState(true);
+  const [enableSound, setEnableSound] = useState(false);
   const [openHamburger, setOpenHamburger] = useState(false);
   const onMuteClick = () => {
     if (enableSound) {

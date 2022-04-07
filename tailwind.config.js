@@ -36,6 +36,7 @@ module.exports = {
         banner: "repeat(9, minmax(30px, auto))",
       },
       dropShadow: {
+        "md-thick": "0 4px 4px rgba(0, 0, 0, 0.70)",
         "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
       },
       width: {
@@ -45,14 +46,6 @@ module.exports = {
         hd: "1080px",
       },
       screens: {
-        /* 'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... } */
         'mobileS': '320px',
         'mobileM': '375px',
         'mobileL': '425px',
