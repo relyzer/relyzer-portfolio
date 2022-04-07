@@ -36,7 +36,7 @@ const Header = ({ width }: Props) => {
       document.body.style.overflow = "hidden";
     }
     return () => {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "";
     };
   }, [openHamburger]);
 
