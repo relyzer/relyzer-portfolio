@@ -6,7 +6,8 @@ type Props = {
 
 const ProjectTag = ({ tagTitle }: Props) => {
   return (
-    <div className="border-2 rounded-lg border-turquoise-green-two bg-turquoise-green-two text-sm lg:text-base 2xl:text-lg w-fit h-fit p-1">
+    //bg-green-turquoise-green-two
+    <div className="bg-green-turquoise-green-two/75 text-green-dark-jungle-green/80 rounded-lg border-turquoise-green-two text-sm lg:text-base 2xl:text-lg w-fit h-fit p-2">
       {tagTitle}
     </div>
   );

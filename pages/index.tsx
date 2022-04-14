@@ -8,7 +8,6 @@ import {
   Experience,
   Skills,
   Portfolio,
-  Contact,
 } from "../components/sections/index";
 
 const IndexPage = () => {
@@ -19,7 +18,6 @@ const IndexPage = () => {
       <Experience /* ref={domRef} */ />
       <Skills /* ref={domRef} */ />
       <Portfolio /* ref={domRef} */ />
-      <Contact /* ref={domRef} */ />
     </Layout>
   );
 };

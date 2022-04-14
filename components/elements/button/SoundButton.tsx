@@ -4,11 +4,12 @@ import useSound from "use-sound";
 type Props = {
   name: string;
   isSoundEnabled: boolean;
+  className?: string;
 };
 
 // Sound credit: https://freesound.org/people/nsstudios/sounds/321103/
 
-const SoundButton = ({ name, isSoundEnabled }: Props) => {
+const SoundButton = ({ name, isSoundEnabled, className }: Props) => {
   // For onMouseLeave event
   //   const [play, { stop }] = useSound("./button_sound.wav");
   const [playbackRate] = React.useState(1.4);
@@ -17,7 +18,14 @@ const SoundButton = ({ name, isSoundEnabled }: Props) => {
     volume: 0.5,
     soundEnabled: isSoundEnabled,
   });
-  return <button onMouseEnter={() => play()}>{name}</button>;
+  return (
+    <button
+      onMouseEnter={() => play()}
+      className={`${className ? className : ""}`}
+    >
+      {name}
+    </button>
+  );
 };
 
 export default SoundButton;

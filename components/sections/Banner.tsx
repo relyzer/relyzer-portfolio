@@ -1,10 +1,14 @@
 import React from "react";
+import Link from "next/link";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Banner = () => {
   return (
-    <section className="flex justify-center items-center -mt-12 h-screen mobileS:p-6 p-20 rounded-b-xl">
+    <section className="flex justify-center items-center -mt-12 h-screen p-6 md:p-20 rounded-b-xl">
       <div className="relative -mt-12">
-        <div className="absolute atom-spinner atom-position left-28 bottom-30 sm:left-[137px] md:left-[125px] lg:left-[158px]">
+        <div className="absolute atom-spinner atom-position">
           <div className="spinner-inner">
             <div className="spinner-line"></div>
             <div className="spinner-line"></div>
@@ -16,6 +20,24 @@ const Banner = () => {
         <h3 className="font-medium text-center p-4 fade-in-text">
           Software Engineer | UX Designer
         </h3>
+        <div className="absolute left-0 right-0 w-0 m-auto mt-20 lg:mt-24 xl:mt-32 2xl:mt-40">
+          <span className="flex flex-row justify-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+            <Link href="https://www.linkedin.com/in/kevintyh/" passHref={true}>
+              <a
+                className="px-4 lg:px-5 xl:px-6 2xl:px-8 icon fade-in-text" /* onMouseEnter={() => play()} */
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </Link>
+            <Link href="https://github.com/relyzer" passHref={true}>
+              <a
+                className="px-4 lg:px-5 xl:px-6 2xl:px-8 icon fade-in-text" /* onMouseEnter={() => play()} */
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </Link>
+          </span>
+        </div>
       </div>
     </section>
   );

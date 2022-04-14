@@ -14,7 +14,8 @@ const ProjectDetail = ({ arr }: Props) => {
     <div className="lg:flex lg:flex-row lg:flex-wrap">
       {arr.map((project: Project) => (
         <div className="lg:basis-1/2 p-4" key={project.id}>
-          <div className="bg-ocean-green rounded-lg h-full p-6">
+          {/* bg-ocean-green */}
+          <div className=" bg-green-turquoise-green/90 rounded-lg h-full p-4 md:p-6">
             <figure className="flex p-2 lg:p-4 justify-center">
               <Image
                 className="rounded-lg"
@@ -23,7 +24,7 @@ const ProjectDetail = ({ arr }: Props) => {
                 src={project.snapshotUrl}
               />
             </figure>
-            <h4 className="p-1 font-bold text-center">{project.title}</h4>
+            <h4 className="p-1 lg:p-2 tracking-wide italic font-bold text-center">{project.title}</h4>
             <div className="flex flex-row flex-wrap">
               {project.tags &&
                 project.tags.map((tag) => (
@@ -32,17 +33,10 @@ const ProjectDetail = ({ arr }: Props) => {
                   </div>
                 ))}
             </div>
-            <p className="p-1">{project.description}</p>
+            <p className="p-2 lg:p-3 xl:p-4 leading-relaxed max-w-prose">
+              {project.description}
+            </p>
             <div className="flex flex-row p-1">
-              {project.githubUrl && (
-                <div className="">
-                  <LinkButton
-                    text="Github Repo"
-                    linkUrl={project.githubUrl}
-                    devicon="devicon-github-original"
-                  />
-                </div>
-              )}
               {project.demoUrl && (
                 <div className="">
                   <LinkButton
@@ -55,22 +49,25 @@ const ProjectDetail = ({ arr }: Props) => {
                   />
                 </div>
               )}
+              {project.githubUrl && (
+                <div className="">
+                  <LinkButton
+                    text="Github Repo"
+                    linkUrl={project.githubUrl}
+                    devicon="devicon-github-original"
+                  />
+                </div>
+              )}
             </div>
             {/* Map the tech stack */}
             {project.techStack && (
-              <>
-                <p className="p-1">Tech stack:</p>
-                <div className="flex flex-row flex-wrap">
-                  {project.techStack.map((tech) => (
-                    <div className="p-1" key={generateUniqueID()}>
-                      <TechLabel
-                        labelTitle={tech.tech}
-                        devicon={tech.devicon}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </>
+              <div className="flex flex-row flex-wrap pt-2 lg:pt-4">
+                {project.techStack.map((tech) => (
+                  <div className="p-1" key={generateUniqueID()}>
+                    <TechLabel labelTitle={tech.tech} devicon={tech.devicon} />
+                  </div>
+                ))}
+              </div>
             )}
           </div>
         </div>

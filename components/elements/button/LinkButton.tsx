@@ -15,16 +15,16 @@ const LinkButton = ({ logoUrl, devicon, text, passHref, linkUrl }: Props) => {
   return (
     <Link href={linkUrl} passHref={passHref ? passHref : true}>
       <a
-        className="flex border-2 border-black bg-black text-ocean-green-two hover:bg-turquoise-green hover:text-black rounded-md p-1 items-center transition-colors drop-shadow-md-thick"
+        className="flex border-2 text-ocean-green-two bg-green-space-cadet text-green-turquoise-green hover:bg-green-bottle-green text-sm sm:text-base rounded-3xl px-3 py-2 md:px-3 md:py-2 lg:px-4 lg:py-2 xl:px-5 xl:py-3 items-center transition-colors"
         target="_blank"
       >
         {logoUrl && <Image src={logoUrl} width={8} height={8} />}
         {devicon && (
           <i
-            className={`${devicon} text-illuminating-emerald text-2xl w-fit h-fit pr-1`}
+            className={`${devicon} text-green-turquoise-green/80 text-xl lg:text-2xl w-fit h-fit pr-1`}
           ></i>
         )}
-        <u className="underline-offset-2">{text}</u>
+        {text}
       </a>
     </Link>
   );

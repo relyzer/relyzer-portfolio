@@ -7,7 +7,7 @@ const CertificatesPage = () => {
   return (
     <Layout title="My online certificates">
       <div className="text-center">
-        <p className="text-xl pt-2">
+        <p className="text-xl pt-4">
           Online certificates I collect to motivate myself to learn!
         </p>
       </div>
