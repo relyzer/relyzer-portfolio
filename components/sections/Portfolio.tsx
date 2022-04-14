@@ -16,7 +16,7 @@ const Portfolio = ({ ref }: Props) => {
       title: "Portfolio Website",
       description:
         "Personal website to tell my story and showcase my projects.\nComes with Unity WebGL for gameplay demonstration and PDFs to display my online course certificates.",
-      snapshotUrl: "/images/Portfolio_website.png",
+      snapshotUrl: "/images/Portfolio-snapshot.png",
       githubUrl: "https://github.com/relyzer/relyzer.github.io",
       techStack: [
         {
