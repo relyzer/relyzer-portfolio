@@ -169,7 +169,7 @@ const Skills = ({ ref }: Props) => {
   return (
     <FadeInSection>
       <section id="skill" ref={ref} className="section">
-        <div className="w-auto h-auto flex-auto card">
+        <div className="w-auto h-auto flex-auto card p-4 md:p-6 lg:p-8 xl:p-16 2xl:p-20">
           <h3 className="sub-header">Skills</h3>
           <h4 className="text-center font-semibold p-4">
             Programming / Mark-up languages

@@ -46,7 +46,7 @@ const Experience = ({ ref }: Props) => {
   return (
     <FadeInSection>
       <section id="experience" ref={ref} className="section">
-        <div className="w-auto h-auto flex-auto card">
+        <div className="w-auto h-auto flex-auto card p-4 md:p-6 lg:p-8 xl:p-16 2xl:p-20">
           {/* Experience section */}
           <h3 className="sub-header">Experience</h3>
           {experienceArr.map((job: Experience) => (

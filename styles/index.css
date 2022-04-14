@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply p-0 m-0 bg-gradient-to-t from-dark-jungle-green via-ocean-green-two to-nyanza min-h-screen flex flex-col;
+    @apply p-0 m-0 /* bg-gradient-to-t from-ocean-green-two via-nyanza to-white min-h-screen */ bg-white-cultured text-green-bottle-green flex flex-col;
   }
 
   #__next {
@@ -32,7 +32,7 @@
     @apply 2xl:text-6xl;
   }
   h3 {
-    @apply text-base;
+    @apply text-lg;
     @apply sm:text-lg;
     @apply md:text-xl;
     @apply lg:text-2xl;
@@ -42,7 +42,7 @@
 
   h4,
   summary {
-    @apply text-sm;
+    @apply text-base;
     @apply sm:text-base;
     @apply md:text-lg;
     @apply lg:text-xl;
@@ -51,7 +51,7 @@
   }
 
   h5 {
-    @apply text-xs;
+    @apply text-sm;
     @apply sm:text-sm;
     @apply md:text-base;
     @apply lg:text-lg;
@@ -79,9 +79,8 @@
 
   /* For Devicon (skill icons) */
   i {
-    @apply text-4xl text-bottle-green;
-    @apply mobileS:text-3xl;
-    @apply lg:text-6xl;
+    @apply text-4xl text-green-bottle-green;
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
   }
 
   figcaption {
@@ -109,19 +108,19 @@
   }
 
   html::-webkit-scrollbar-thumb {
-    @apply bg-ocean-green hover:bg-ocean-green-two transition-colors rounded-3xl;
+    @apply bg-green-turquoise-green hover:bg-green-turquoise-green-two transition-colors rounded-3xl;
   }
 
   html::-webkit-scrollbar-track {
-    @apply bg-turquoise-green;
+    @apply bg-white-cultured;
   }
 
   /* For highlighted text colour */
   ::selection {
-    background: #75f4f4; /* WebKit/Blink Browsers */
+    @apply bg-green-medium-spring-green text-green-space-cadet; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    background: #75f4f4; /* Gecko Browsers */
+    @apply bg-green-medium-spring-green text-green-space-cadet; /* Gecko Browsers */
   }
 
   summary {
@@ -167,11 +166,11 @@
   }
 
   .fade-in-text {
-    animation: fadeIn linear 4s;
-    -webkit-animation: fadeIn linear 4s;
-    -moz-animation: fadeIn linear 4s;
-    -o-animation: fadeIn linear 4s;
-    -ms-animation: fadeIn linear 4s;
+    animation: fadeIn linear 2.5s;
+    -webkit-animation: fadeIn linear 2.5s;
+    -moz-animation: fadeIn linear 2.5s;
+    -o-animation: fadeIn linear 2.5s;
+    -ms-animation: fadeIn linear 2.5s;
   }
 
   @keyframes fadeIn {
@@ -219,82 +218,25 @@
     }
   }
 
-  .hovering-image {
-    animation: hovering 8s ease-in-out infinite;
-    -webkit-animation: hovering 8s ease-in-out infinite;
-    -moz-animation: hovering 8s ease-in-out infinite;
-    -o-animation: hovering 8s ease-in-out infinite;
-    -ms-animation: hovering 8s ease-in-out infinite;
+  .link {
+    @apply inline-block relative;
+    text-decoration: none;
   }
 
-  @keyframes hovering {
-    0% {
-      transform: translatey(-16px);
-    }
+  /* Hover link animation credit: https://codepen.io/origine/pen/KVzpYm */
 
-    50% {
-      transform: translatey(16px);
-    }
-
-    100% {
-      transform: translatey(-16px);
-    }
+  .hover-link {
+    @apply align-middle hover:text-green-illuminating-emerald transition-colors;
   }
 
-  @-moz-keyframes hovering {
-    0% {
-      transform: translatey(-16px);
-    }
-
-    50% {
-      transform: translatey(16px);
-    }
-
-    100% {
-      transform: translatey(-16px);
-    }
+  .hover-link::after {
+    @apply absolute w-full h-[0.1rem] bottom-0 left-0 bg-green-illuminating-emerald scale-0 origin-bottom-right;
+      content:'';
+      transition: transform 0.3s;
   }
 
-  @-webkit-keyframes hovering {
-    0% {
-      transform: translatey(-16px);
-    }
-
-    50% {
-      transform: translatey(16px);
-    }
-
-    100% {
-      transform: translatey(-16px);
-    }
-  }
-
-  @-o-keyframes hovering {
-    0% {
-      transform: translatey(-16px);
-    }
-
-    50% {
-      transform: translatey(16px);
-    }
-
-    100% {
-      transform: translatey(-16px);
-    }
-  }
-
-  @-ms-keyframes hovering {
-    0% {
-      transform: translatey(-16px);
-    }
-
-    50% {
-      transform: translatey(16px);
-    }
-
-    100% {
-      transform: translatey(-16px);
-    }
+  .hover-link:hover::after {
+    @apply origin-bottom-left scale-100;
   }
 
   .atom-position {
@@ -313,14 +255,12 @@
 
   /* The animation above the 'i' in the name. May need to optimise this further for other devices */
   .atom-spinner {
-    @apply mobileS:scale-75 mobileS:-translate-y-1 mobileS:-translate-x-[0.95rem];
-    @apply mobileM:-translate-x-[0.95rem];
-    @apply mobileL:-translate-x-[0.95rem];
-    @apply sm:scale-90 sm:-translate-x-[2rem];
-    @apply md:scale-100 md:-translate-x-[0.3rem];
-    @apply lg:scale-150 lg:-translate-x-[0.85rem] lg:-translate-y-1;
-    @apply xl:scale-150 xl:translate-x-[1.5rem] xl:translate-y-0;
-    @apply 2xl:scale-[3] 2xl:translate-x-[7.1rem] 2xl:translate-y-2;
+    @apply scale-75 -translate-y-1 -translate-x-7;
+    @apply sm:scale-90 sm:-translate-x-[2.05rem];
+    @apply md:scale-100 md:-translate-x-8;
+    @apply lg:scale-150 lg:-translate-x-[2.2rem] lg:translate-y-0;
+    @apply xl:scale-150 xl:-translate-x-[2.4rem] xl:translate-y-1;
+    @apply 2xl:scale-[3] 2xl:-translate-x-[3.6rem] 2xl:translate-y-4;
   }
 
   .atom-spinner .spinner-inner {
@@ -328,13 +268,13 @@
   }
 
   .atom-spinner .spinner-circle {
-    @apply text-brunswick-green block absolute top-1/2 left-1/2;
+    @apply text-green-bottle-green block absolute top-1/2 left-1/2;
     font-size: calc(60px * 0.24);
     transform: translate(-50%, -50%);
   }
 
   .atom-spinner .spinner-line {
-    @apply border-brunswick-green absolute w-full h-full;
+    @apply border-green-bottle-green absolute w-full h-full;
     border-radius: 50%;
     animation-duration: 1s;
     border-left-width: calc(60px / 25);
@@ -404,27 +344,26 @@
   }
 
   .sub-header {
-    @apply bg-ocean-green bg-gradient-to-r from-ocean-green to-turquoise-green-two p-2 rounded-lg;
+    @apply bg-gradient-to-r from-green-turquoise-green/95 to-green-nyanza p-2 lg:p-4 rounded-lg;
   }
 
   /* Revisit .card's responsive design */
   .card {
-    @apply bg-turquoise-green-two p-8 rounded-2xl shadow-3xl;
+    @apply bg-green-nyanza drop-shadow-xl rounded-2xl;
   }
 
   /* Credit: https://codepen.io/dig-lopes/pen/WLVGda */
   .icon {
     /* @apply bg-turquoise-green; */
+    @apply text-green-brunswick-green/60;
     border-radius: 50%;
-    color: #666;
     transition: 0.5s;
   }
 
   .icon::before {
-    @apply w-full h-full scale-90;
+    @apply w-full h-full scale-90 bg-green-illuminating-emerald;
     content: "";
     border-radius: 50%;
-    background: #40916c;
     transition: 0.5s;
     z-index: -1;
   }
@@ -435,8 +374,8 @@
   }
 
   .icon:hover {
-    color: #40916c;
-    box-shadow: 0 0 5px #40916c;
+    @apply text-green-illuminating-emerald;
+    /* box-shadow: 0 0 5px #40916c; */
     text-shadow: 0 0 5px #40916c;
   }
 

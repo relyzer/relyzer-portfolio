@@ -76,7 +76,7 @@ const Portfolio = ({ ref }: Props) => {
   return (
     <FadeInSection>
       <section id="portfolio" ref={ref} className="section">
-        <div className="w-auto h-auto flex-auto card">
+        <div className="card p-4 md:p-6 lg:p-8 xl:p-16 2xl:p-20">
           <h3 className="sub-header">Portfolio</h3>
           <ProjectDetail arr={projectArr} />
         </div>
