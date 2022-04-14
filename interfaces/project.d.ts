@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   description: string;
   redirectExternal: boolean;
+  altText: string;
   techStack?: TechStack[]; // Tech stack icon file path
   tags?: string[];
   snapshotUrl?: string;
