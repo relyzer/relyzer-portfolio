@@ -15,7 +15,7 @@ const Portfolio = ({ ref }: Props) => {
       id: generateUniqueID(),
       title: "Portfolio Website",
       description:
-        "A personal website about myself and to showcase my projects.\nComes with Unity WebGL for gameplay demonstration and PDFs to display my online certificates.",
+        "Personal website to tell my story and showcase my projects.\nComes with Unity WebGL for gameplay demonstration and PDFs to display my online course certificates.",
       snapshotUrl: "/images/Portfolio_website.png",
       githubUrl: "https://github.com/relyzer/relyzer.github.io",
       techStack: [
@@ -43,7 +43,7 @@ const Portfolio = ({ ref }: Props) => {
       id: generateUniqueID(),
       title: "Amprise",
       description:
-        "An outdoor-social mobile application designed to connect people and the environment around them.\nThe word 'Amprise' is a twist on 'emprise', which is a synonym to the words 'adventure', 'undertaking', 'quest'.\nTake a look at the UX case study for more information!",
+        "Mobile application based off an outdoor-social concept, designed to connect people with the environment around them.\nThe word 'Amprise' is a twist on 'emprise', which is a synonym to the words 'adventure', 'undertaking', 'quest'.\n\nTake a look at the UX case study for more information!",
       demoUrl: "http://uxfol.io/p/kevintyh/045b2e10",
       snapshotUrl: "/images/Amprise-ux.png",
       techStack: [
@@ -60,13 +60,17 @@ const Portfolio = ({ ref }: Props) => {
       id: generateUniqueID(),
       title: "Citadel VR Experience",
       description:
-        "A project where I did 3D-modeling and learn about Vuforia virtual reality toolkit (VRTK).\nClick on the demo to run the unity build.\nNote: Demo contains sound and may not be optimised for certain devices.",
+        "Mini project created using Unity, Maya 3D modelling and Vuforia virtual reality toolkit (VRTK).\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
       demoUrl: "/citadel",
       snapshotUrl: "/images/vr-demo-1.png",
       techStack: [
         {
           tech: "Unity",
           devicon: "devicon-unity-original",
+        },
+        {
+          tech: "Maya",
+          devicon: "devicon-maya-plain",
         },
       ],
       tags: ["Unity", "Game Design"],

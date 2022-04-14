@@ -1,16 +1,14 @@
 # relyzer.github.io
 
 A simple, first iteration of my personal website!  
-This project serves as a training ground for my front-end skills and clean coding.  
-As my skills improve, I hope to add more cool features to my site, so stay tuned!
+This project also serves as a training ground for my front-end skills and clean coding.  
+As my skills improve, I hope to add more cool features to my site, so stay tuned!  
 
 ## To do:
 
-1.) Modify contents and reduce clutter  
-2.) Make it prettier!  
-3.) Fix responsive issue of the spinner animation and the name in the banner section  
-4.) Fix all responsiveness of the layouts and sections  
-5.) Separate the data into another folder/fileset from the components (SOC principle)
+1.) Further improve aesthetics and responsive design!  
+2.) Make it even prettier!   
+5.) Separate the data into another folder/fileset from the components (SOC principle)  
 
 ## Website initially started from:
 
@@ -48,9 +46,13 @@ Great short tutorial with easy-to-use hooks!
 Use-sound / Howler.js: https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/
 
 Devicon: https://devicon.dev/  
-Fontawesome: https://fontawesome.com/v6.0
+Fontawesome: https://fontawesome.com/v6.0  
 React intersection observer: https://www.npmjs.com/package/react-intersection-observer  
-React-pdf: https://github.com/wojtekmaj/react-pdf#readme
+React-pdf: https://github.com/wojtekmaj/react-pdf#readme  
 
 Animations:  
-Epic Spinners: https://epic-spinners.epicmax.co/
+Epic Spinners: https://epic-spinners.epicmax.co/  
+
+
+## Other references
+Codepen  
