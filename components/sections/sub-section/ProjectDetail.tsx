@@ -11,12 +11,12 @@ type Props = {
 
 const ProjectDetail = ({ arr }: Props) => {
   return (
-    <div className="lg:flex lg:flex-row lg:flex-wrap">
+    <div className="lg:p-6 2xl:p-10 lg:flex lg:flex-row lg:flex-wrap">
       {arr.map((project: Project) => (
         <div className="lg:basis-1/2 p-4" key={project.id}>
           {/* bg-ocean-green */}
-          <div className=" bg-green-turquoise-green/90 rounded-lg h-full p-4 md:p-6">
-            <figure className="flex p-2 lg:p-4 justify-center">
+          <div className=" bg-green-turquoise-green/90 rounded-lg h-full p-4 md:p-6 lg:p-8 2xl:p-10">
+            <figure className="flex lg:p-4 justify-center">
               <Image
                 className="rounded-lg"
                 width={500}
@@ -28,7 +28,7 @@ const ProjectDetail = ({ arr }: Props) => {
             <div className="flex flex-row flex-wrap">
               {project.tags &&
                 project.tags.map((tag) => (
-                  <div className="pr-2 py-1 md:py-0" key={generateUniqueID()}>
+                  <div className="pr-2 py-1 md:py-0 lg:py-2" key={generateUniqueID()}>
                     <ProjectTag tagTitle={tag} />
                   </div>
                 ))}
