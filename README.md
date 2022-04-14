@@ -8,7 +8,9 @@ As my skills improve, I hope to add more cool features to my site, so stay tuned
 
 1.) Further improve aesthetics and responsive design!  
 2.) Make it even prettier!   
-5.) Separate the data into another folder/fileset from the components (SOC principle)  
+5.) Separate the data into another folder/fileset from the components (SOC principle) 
+4.) Add pagination to project section  
+5.) Add ... read more to reduce word clutter for project details
 
 ## Website initially started from:
 

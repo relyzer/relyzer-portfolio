@@ -17,6 +17,7 @@ const Portfolio = ({ ref }: Props) => {
       description:
         "Personal website to tell my story and showcase my projects.\nComes with Unity WebGL for gameplay demonstration and PDFs to display my online course certificates.",
       snapshotUrl: "/images/Portfolio-snapshot.png",
+      altText: "A screenshot image of Kevin's website",
       githubUrl: "https://github.com/relyzer/relyzer.github.io",
       techStack: [
         {
@@ -46,6 +47,7 @@ const Portfolio = ({ ref }: Props) => {
         "Mobile application based off an outdoor-social concept, designed to connect people with the environment around them.\nThe word 'Amprise' is a twist on 'emprise', which is a synonym to the words 'adventure', 'undertaking', 'quest'.\n\nTake a look at the UX case study for more information!",
       demoUrl: "http://uxfol.io/p/kevintyh/045b2e10",
       snapshotUrl: "/images/Amprise-ux.png",
+      altText: "Images of a mobile application's user interface mock-ups",
       techStack: [
         {
           tech: "Swift",
@@ -63,6 +65,7 @@ const Portfolio = ({ ref }: Props) => {
         "Mini project created using Unity, Maya 3D modelling and Vuforia virtual reality toolkit (VRTK).\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
       demoUrl: "/citadel",
       snapshotUrl: "/images/vr-demo-1.png",
+      altText: "An image of a three dimensional virtual reality environment",
       techStack: [
         {
           tech: "Unity",

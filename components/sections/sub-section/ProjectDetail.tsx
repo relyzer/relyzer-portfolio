@@ -19,6 +19,7 @@ const ProjectDetail = ({ arr }: Props) => {
             <figure className="flex lg:p-4 justify-center">
               <Image
                 className="rounded-lg"
+                alt={project.altText}
                 width={500}
                 height={300}
                 src={project.snapshotUrl}
