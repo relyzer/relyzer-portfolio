@@ -27,7 +27,8 @@ const About = () => {
             <p className="px-4 py-2 leading-relaxed">
               An IT graduate with professional experience in full-stack software
               engineering. <br />
-              My interests lies in web, mobile, mixed reality and games development.
+              My interests lies in web, mobile, mixed reality and games
+              development.
               <br /> <br />
               Previously I was a mechanical engineering polytechnic student who
               cultivated a passion for technology whilst fiddling with iOS

@@ -53,6 +53,10 @@ const Portfolio = ({ ref }: Props) => {
           tech: "Swift",
           devicon: "devicon-swift-plain",
         },
+        {
+          tech: "Figma",
+          devicon: "devicon-figma-plain",
+        },
       ],
       tags: ["Mobile App Development", "UI/UX Design"],
       demoButtonText: "UX case study",

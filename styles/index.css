@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply p-0 m-0 /* bg-gradient-to-t from-ocean-green-two via-nyanza to-white min-h-screen */ bg-white-cultured text-green-bottle-green flex flex-col;
+    @apply p-0 m-0 /* bg-gradient-to-t from-ocean-green-two via-nyanza to-white min-h-screen */ bg-green-dark-jungle-green text-green-ocean-green flex flex-col;
   }
 
   #__next {
@@ -79,7 +79,7 @@
 
   /* For Devicon (skill icons) */
   i {
-    @apply text-4xl text-green-bottle-green;
+    @apply text-4xl text-green-illuminating-emerald;
     @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
   }
 
@@ -108,19 +108,19 @@
   }
 
   html::-webkit-scrollbar-thumb {
-    @apply bg-green-turquoise-green hover:bg-green-turquoise-green-two transition-colors rounded-3xl;
+    @apply bg-green-illuminating-emerald hover:bg-green-bottle-green transition-colors rounded-3xl;
   }
 
   html::-webkit-scrollbar-track {
-    @apply bg-white-cultured;
+    @apply bg-green-dark-jungle-green;
   }
 
   /* For highlighted text colour */
   ::selection {
-    @apply bg-green-medium-spring-green text-green-space-cadet; /* WebKit/Blink Browsers */
+    @apply bg-green-medium-spring-green text-black-space-cadet; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    @apply bg-green-medium-spring-green text-green-space-cadet; /* Gecko Browsers */
+    @apply bg-green-medium-spring-green text-black-space-cadet; /* Gecko Browsers */
   }
 
   summary {
@@ -131,7 +131,7 @@
     @apply absolute top-5 left-4 border-solid;
     content: "";
     border-width: 0.5rem;
-    border-color: transparent transparent transparent #000000;
+    border-color: transparent transparent transparent #74c69d;
     transform: rotate(0);
     transform-origin: 0.2rem 50%;
     transition: 0.25s transform ease;
@@ -231,8 +231,8 @@
 
   .hover-link::after {
     @apply absolute w-full h-[0.1rem] bottom-0 left-0 bg-green-illuminating-emerald scale-0 origin-bottom-right;
-      content:'';
-      transition: transform 0.3s;
+    content: "";
+    transition: transform 0.3s;
   }
 
   .hover-link:hover::after {
@@ -268,13 +268,14 @@
   }
 
   .atom-spinner .spinner-circle {
-    @apply text-green-bottle-green block absolute top-1/2 left-1/2;
+    @apply text-gray-pale-silver block absolute top-1/2 left-1/2;
+    animation: light-up 2.5s forwards;
     font-size: calc(60px * 0.24);
     transform: translate(-50%, -50%);
   }
 
   .atom-spinner .spinner-line {
-    @apply border-green-bottle-green absolute w-full h-full;
+    @apply border-green-medium-spring-green absolute w-full h-full;
     border-radius: 50%;
     animation-duration: 1s;
     border-left-width: calc(60px / 25);
@@ -330,6 +331,61 @@
     }
   }
 
+  /* Reference: https://codepen.io/Steve-H/pen/VqzQZz */
+
+  .text-light-up {
+    @apply text-gray-pale-silver;
+    animation: light-up 2.5s forwards;
+  }
+
+  @keyframes light-up {
+    20% {
+      @apply text-gray-pale-silver;
+      text-shadow: none;
+    }
+    21% {
+      @apply text-green-medium-spring-green;
+      text-shadow: 0px 0px 10px #52FFB8;
+    }
+    23% {
+      @apply text-gray-pale-silver;
+      text-shadow: none;
+    }
+    24% {
+      @apply text-green-medium-spring-green;
+      text-shadow: 0px 0px 10px #52FFB8;
+    }
+    25% {
+      @apply text-gray-pale-silver;
+      text-shadow: none;
+    }
+    26% {
+      @apply text-green-medium-spring-green;
+      text-shadow: 0px 0px 10px #52FFB8;
+    }
+    30% {
+      @apply text-gray-battleship-grey;
+      text-shadow: none;
+    }
+    48% {
+      @apply text-gray-battleship-grey;
+      text-shadow: none;
+    }
+    80% {
+      @apply text-green-medium-spring-green;
+      text-shadow: 0px 0px 10px #52FFB8;
+    }
+    100% {
+      @apply text-green-medium-spring-green;
+      text-shadow: 0px 0px 10px #52FFB8;
+    }
+  }
+
+  .text-light-up-two {
+    @apply text-gray-pale-silver;
+    animation: light-up 4.2s forwards;
+  }
+
   /* Revisit .section's responsive design */
   /* Section is for the section containers in the page */
 
@@ -344,18 +400,18 @@
   }
 
   .sub-header {
-    @apply bg-gradient-to-r from-green-turquoise-green/95 to-green-nyanza p-2 lg:p-4 rounded-lg;
+    @apply bg-gradient-to-r from-green-dark-jungle-green/95 to-green-brunswick-green p-2 lg:p-4 rounded-lg;
   }
 
   /* Revisit .card's responsive design */
   .card {
-    @apply bg-green-nyanza drop-shadow-xl rounded-2xl;
+    @apply bg-green-brunswick-green drop-shadow-xl rounded-2xl;
   }
 
   /* Credit: https://codepen.io/dig-lopes/pen/WLVGda */
   .icon {
     /* @apply bg-turquoise-green; */
-    @apply text-green-brunswick-green/60;
+    @apply text-green-illuminating-emerald/90;
     border-radius: 50%;
     transition: 0.5s;
   }
@@ -374,7 +430,7 @@
   }
 
   .icon:hover {
-    @apply text-green-illuminating-emerald;
+    @apply text-green-ocean-green-two;
     /* box-shadow: 0 0 5px #40916c; */
     text-shadow: 0 0 5px #40916c;
   }
