@@ -16,9 +16,9 @@ module.exports = {
         "ocean-green-two": "#52b788",
         "illuminating-emerald": "#40916c",
         "bottle-green": "#2d6a4f",
+        "msu-green": "#1B4332",
         "brunswick-green": "#1b4332",
         "dark-jungle-green": "#081c15",
-        "space-cadet": "#212738",
         "medium-spring-green": "#52FFB8",
       },
       gray: {
@@ -28,6 +28,7 @@ module.exports = {
       },
       black: {
         DEFAULT: "#000000",
+        "space-cadet": "#212738",
         "rich-black-fogra": "#131B24",
       },
       white: {

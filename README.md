@@ -6,11 +6,10 @@ As my skills improve, I hope to add more cool features to my site, so stay tuned
 
 ## To do:
 
-1.) Further improve aesthetics and responsive design!  
+1.) Further improve aesthetics and responsive design! Add more interactive / dynamic elements!  
 2.) Make it even prettier!   
 5.) Separate the data into another folder/fileset from the components (SOC principle) 
-4.) Add pagination to project section  
-5.) Add ... read more to reduce word clutter for project details
+4.) Add pagination to project section (also consider the necessity and the benefit for UX)  
 
 ## Website initially started from:
 
@@ -53,6 +52,7 @@ React intersection observer: https://www.npmjs.com/package/react-intersection-ob
 React-pdf: https://github.com/wojtekmaj/react-pdf#readme  
 
 Animations:  
+Vanta.js: https://www.vantajs.com/  
 Epic Spinners: https://epic-spinners.epicmax.co/  
 
 

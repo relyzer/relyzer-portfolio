@@ -61,6 +61,7 @@ const Layout = ({ children, title = "Default title" }: Props) => {
           src="https://kit.fontawesome.com/fd07a2fb4b.js"
           crossOrigin="anonymous"
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
       </Head>
       <Header width={windowWidth} />
       <div className="">

@@ -9,7 +9,7 @@ const Footer = () => {
   // const [play] = useSound("./button_sound.wav", { playbackRate, volume: 0.4 });
 
   return (
-    <footer className="bg-green-turquoise-green mt-auto p-2">
+    <footer className="bg-green-dark-jungle-green mt-auto p-2">
       <div className="flex flex-row items-center">
         <span className="flex-1 font-sans text-ocean-green motion-safe:animate-pulse text-left text-xs sm:text-base leading-4 md:leading-8 pl-8">
           Website by <strong>Kevin Tan</strong>
