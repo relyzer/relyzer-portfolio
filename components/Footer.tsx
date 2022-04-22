@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-green-dark-jungle-green mt-auto p-2">
       <div className="flex flex-row items-center">
-        <span className="flex-1 font-sans text-ocean-green motion-safe:animate-pulse text-left text-xs sm:text-base leading-4 md:leading-8 pl-8">
+        <span className="flex-1 text-ocean-green motion-safe:animate-pulse text-left text-xs sm:text-base leading-4 md:leading-8 pl-8">
           Website by <strong>Kevin Tan</strong>
         </span>
         <span className="flex-1 text-right text-2xl lg:text-3xl">

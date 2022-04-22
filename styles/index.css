@@ -3,8 +3,49 @@
 @tailwind utilities;
 
 @layer base {
+
+  @font-face {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+  }
+
+  @font-face {
+    font-family: 'Glegoo', serif;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Glegoo', serif;
+    font-weight: 700;
+  }
+
   body {
-    @apply p-0 m-0 /* bg-gradient-to-t from-ocean-green-two via-nyanza to-white min-h-screen */ bg-green-dark-jungle-green text-green-ocean-green flex flex-col;
+    @apply p-0 m-0 /* bg-gradient-to-t from-ocean-green-two via-nyanza to-white min-h-screen */ bg-green-dark-jungle-green text-green-nyanza flex flex-col;
   }
 
   #__next {
@@ -12,19 +53,20 @@
   }
 
   * {
-    @apply box-border font-sans;
+    @apply box-border font-serif;
   }
 
   h1 {
-    @apply text-4xl;
+    @apply font-sans text-4xl;
     @apply sm:text-5xl;
     @apply md:text-5xl;
     @apply lg:text-6xl;
     @apply xl:text-7xl;
     @apply 2xl:text-9xl;
   }
+
   h2 {
-    @apply text-xl;
+    @apply font-sans text-xl;
     @apply sm:text-2xl;
     @apply md:text-3xl;
     @apply lg:text-4xl;
@@ -32,7 +74,7 @@
     @apply 2xl:text-6xl;
   }
   h3 {
-    @apply text-lg;
+    @apply font-sans text-lg;
     @apply sm:text-lg;
     @apply md:text-xl;
     @apply lg:text-2xl;
@@ -42,7 +84,7 @@
 
   h4,
   summary {
-    @apply text-base;
+    @apply font-sans text-base;
     @apply sm:text-base;
     @apply md:text-lg;
     @apply lg:text-xl;
@@ -79,7 +121,7 @@
 
   /* For Devicon (skill icons) */
   i {
-    @apply text-4xl text-green-illuminating-emerald;
+    @apply text-4xl text-green-turquoise-green-two;
     @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
   }
 
@@ -117,7 +159,7 @@
 
   /* For highlighted text colour */
   ::selection {
-    @apply bg-green-medium-spring-green text-black-space-cadet; /* WebKit/Blink Browsers */
+    @apply bg-green-ocean-green text-black-space-cadet; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
     @apply bg-green-medium-spring-green text-black-space-cadet; /* Gecko Browsers */
@@ -255,12 +297,12 @@
 
   /* The animation above the 'i' in the name. May need to optimise this further for other devices */
   .atom-spinner {
-    @apply scale-75 -translate-y-1 -translate-x-7;
-    @apply sm:scale-90 sm:-translate-x-[2.05rem];
-    @apply md:scale-100 md:-translate-x-8;
-    @apply lg:scale-150 lg:-translate-x-[2.2rem] lg:translate-y-0;
-    @apply xl:scale-150 xl:-translate-x-[2.4rem] xl:translate-y-1;
-    @apply 2xl:scale-[3] 2xl:-translate-x-[3.6rem] 2xl:translate-y-4;
+    @apply scale-75 -translate-y-1 -translate-x-6;
+    @apply sm:scale-90 sm:-translate-x-[1.71rem];
+    @apply md:scale-100 md:-translate-x-[1.65rem];
+    @apply lg:scale-125 lg:-translate-x-[1.8rem] lg:-translate-y-1;
+    @apply xl:scale-150 xl:-translate-x-[1.88rem] xl:translate-y-0;
+    @apply 2xl:scale-[2.5] 2xl:-translate-x-[3.05rem] 2xl:translate-y-2;
   }
 
   .atom-spinner .spinner-inner {
@@ -315,19 +357,6 @@
   @keyframes atom-spinner-animation-3 {
     100% {
       transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
-    }
-  }
-
-  .hamburger-menu {
-    @apply opacity-0;
-    animation: hamburger-menu-fade-in 500ms ease-in forwards;
-    transform: translateX(-60%);
-  }
-
-  @keyframes hamburger-menu-fade-in {
-    100% {
-      @apply opacity-100;
-      transform: translateX(0);
     }
   }
 
@@ -410,8 +439,7 @@
 
   /* Credit: https://codepen.io/dig-lopes/pen/WLVGda */
   .icon {
-    /* @apply bg-turquoise-green; */
-    @apply text-green-illuminating-emerald/90;
+    @apply text-green-medium-spring-green;
     border-radius: 50%;
     transition: 0.5s;
   }
@@ -430,13 +458,13 @@
   }
 
   .icon:hover {
-    @apply text-green-ocean-green-two;
+    @apply text-white-cultured;
     /* box-shadow: 0 0 5px #40916c; */
     text-shadow: 0 0 5px #40916c;
   }
 
   .fade-in-section {
-    opacity: 0;
+    @apply opacity-0;
     transform: translateY(20vh);
     visibility: hidden;
     transition: opacity 0.2s ease-out, transform 0.6s ease-out;
@@ -445,6 +473,37 @@
 
   .fade-in-section.is-visible {
     @apply opacity-100 transform-none visible flex;
+  }
+  
+  .show-header {
+    @apply transition-all;
+    transform-origin: 100% 0%;
+    animation: open-header 0.5s normal forwards ease-in-out;
+  }
+
+  .hide-header {
+    @apply transition-all;
+    transform-origin: 100% 0%;
+    animation: close-header 0.5s normal forwards ease-in-out;
+  }
+
+  @keyframes open-header {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  @keyframes close-header {
+    from {
+      transform: scaleY(1);
+    }
+    to {
+      @apply hidden;
+      transform: scaleY(0);
+    }
   }
 }
 

@@ -84,6 +84,7 @@ const Portfolio = ({ ref }: Props) => {
       redirectExternal: false,
     },
   ];
+
   return (
     <FadeInSection>
       <section id="portfolio" ref={ref} className="section">

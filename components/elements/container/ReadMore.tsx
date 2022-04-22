@@ -13,15 +13,15 @@ const ReadMore = ({ text, className }: Props) => {
 
   return (
     <p className={className}>
-      {toggleReadMore ? text.slice(0, 160) : text}
+      {toggleReadMore ? text.slice(0, 70) : text}
       <span
         onClick={handleReadMore}
         className="italic font-semibold cursor-pointer text-green-turquoise-green-two hover:text-green-turquoise-green"
       >
-        {text.length > 160
+        {text.length > 70
           ? toggleReadMore
-            ? "\t...read more"
-            : "\nshow less"
+            ? "\t...show more"
+            : "\n...show less"
           : ""}
       </span>
     </p>

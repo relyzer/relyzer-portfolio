@@ -4,6 +4,7 @@ import { Skill } from "../../interfaces/skills";
 import { SkillDetail } from "./sub-section";
 import FadeInSection from "../animation/FadeInSection";
 import generateUniqueID from "../../lib/utility/generateUniqueID";
+import { LinkButton } from "../elements/button/";
 
 type Props = {
   ref?: RefObject<HTMLInputElement>;
@@ -126,23 +127,13 @@ const Skills = ({ ref }: Props) => {
     },
     {
       id: generateUniqueID(),
-      devicon: "",
-      caption: "Vega-lite",
-    },
-    {
-      id: generateUniqueID(),
       devicon: "devicon-matlab-plain",
       caption: "MATLAB",
     },
     {
       id: generateUniqueID(),
-      devicon: "",
-      caption: "AutoCAD",
-    },
-    {
-      id: generateUniqueID(),
       devicon: "devicon-maya-plain",
-      caption: "Autodesk Maya",
+      caption: "Maya",
     },
     {
       id: generateUniqueID(),
@@ -197,14 +188,16 @@ const Skills = ({ ref }: Props) => {
           <h4 className="text-center font-semibold p-4">DevOps / Cloud</h4>
           <SkillDetail arr={devOpsArr} />
 
-          <details>
-            <summary className="text-center font-semibold p-4 cursor-pointer">
-              Others
-            </summary>
-            <div className="details-div">
-              <SkillDetail arr={othersArr} />
-            </div>
-          </details>
+          <h4 className="text-center font-semibold p-4">Others</h4>
+          <SkillDetail arr={othersArr} />
+
+          <div className="pt-4 xl:pt-8 flex justify-center">
+            <LinkButton
+              text="View my certificates"
+              passHref={false}
+              linkUrl={"/certificates"}
+            />
+          </div>
         </div>
       </section>
     </FadeInSection>
