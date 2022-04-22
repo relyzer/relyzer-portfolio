@@ -48,6 +48,16 @@ const Layout = ({ children, title = "Default title" }: Props) => {
           href="/favicon_package_v0.16/safari-pinned-tab.svg"
           color="#5bbad5"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"

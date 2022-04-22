@@ -35,12 +35,19 @@ module.exports = {
         DEFAULT: "#FFFFFF",
         "cultured": "#F1F2EE",
       },
+      purple: {
+        "lavender-floral": "#A083DF"
+      }
     },
-    fontFamily: {
+   /*  fontFamily: {
       sans: ["Futura", "sans-serif"],
       serif: [],
-    },
+    }, */
     extend: {
+      fontFamily: {
+        sans: ["Orbitron", "Futura", "sans-serif"],
+        serif: ["Glegoo"]
+      },
       gridTemplateColumns: {
         banner: "repeat(9, minmax(30px, auto))",
       },
