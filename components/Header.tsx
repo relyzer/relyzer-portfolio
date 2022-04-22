@@ -12,7 +12,7 @@ type Props = {
 
 const Header = ({ width }: Props) => {
   const [enableSound, setEnableSound] = useState(false);
-  const [isScrollDown, setScrollDown] = useState(true);
+  const [isScrollDown, setScrollDown] = useState(false);
 
   const onMuteClick = () => {
     setEnableSound(!enableSound);
