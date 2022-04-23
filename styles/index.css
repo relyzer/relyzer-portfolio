@@ -268,7 +268,7 @@
   /* Hover link animation credit: https://codepen.io/origine/pen/KVzpYm */
 
   .hover-link {
-    @apply align-middle hover:text-green-illuminating-emerald transition-colors;
+    @apply align-middle hover:text-green-turquoise-green-two transition-colors;
   }
 
   .hover-link::after {

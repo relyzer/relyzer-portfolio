@@ -40,7 +40,6 @@ const ProjectDetail = ({ arr }: Props) => {
                 src={project.snapshotUrl}
               />
             </figure>
-            <div className="xl:min-w-[50vw] 2xl:min-w-[40vw]">
               <h4 className="p-1 lg:p-2 tracking-wide font-bold text-center">
                 {project.title}
               </h4>
@@ -61,9 +60,6 @@ const ProjectDetail = ({ arr }: Props) => {
                   className="p-2 lg:p-3 xl:p-4 leading-relaxed tracking-tight max-w-prose"
                 />
               </div>
-              {/*   <p className="p-2 lg:p-3 xl:p-4 leading-relaxed max-w-prose">
-              {project.description}
-            </p> */}
               <div className="flex flex-row p-1">
                 {project.demoUrl && (
                   <div className="">
@@ -100,7 +96,6 @@ const ProjectDetail = ({ arr }: Props) => {
                   ))}
                 </div>
               )}
-            </div>
           </div>
         </div>
       ))}
