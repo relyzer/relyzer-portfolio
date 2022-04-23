@@ -11,9 +11,10 @@ As my skills improve, I hope to add more cool features to my site, so stay tuned
 3.) Separate the data into another folder/fileset from the components (SOC principle)  
 4.) Add pagination to project section (also consider the necessity and the benefit for UX) or a hover animation  
 5.) Add a website loading animation upon first entry  
-6.) Properly utilise Next.js static props function 
+6.) Properly utilise Next.js static props function  
 7.) Add logo for home button  
-8.) Fix header issue in certificates page   
+8.) Fix header issue in certificates page  
+9.) Improve horizontal scroll speed of certificate gallery  
 
 ## Website initially started from:
 
