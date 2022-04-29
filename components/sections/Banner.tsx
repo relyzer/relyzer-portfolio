@@ -8,12 +8,12 @@ import DOTS from "vanta/dist/vanta.dots.min";
 const Banner = () => {
 
   const [vantaEffect, setVantaEffect]: [any, any] = useState(0);
-  const myRef = useRef(null);
+  const vantaRef = useRef(null);
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
         DOTS({
-          el: myRef.current,
+          el: vantaRef.current,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
@@ -35,7 +35,10 @@ const Banner = () => {
   }, [vantaEffect]);
   
   return (
-    <section ref={myRef} className="flex justify-center items-center -mt-12 h-screen p-2 sm:p-6 md:p-20 rounded-b-xl">
+    <section /* ref={vantaRef} */ className="flex relative justify-center items-center -mt-12 h-screen p-2 sm:p-6 md:p-20 rounded-b-xl">
+      <div className="absolute h-screen w-full">
+        <div ref={vantaRef} className="fixed h-screen w-full"></div>
+      </div>
       <div className="relative -mt-12 bg-green-dark-jungle-green/90 sm:p-2 rounded-3xl z-10">
         <div className="absolute atom-spinner atom-position fade-in-text">
           <div className="spinner-inner">
