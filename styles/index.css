@@ -463,6 +463,14 @@
     text-shadow: 0 0 5px #40916c;
   }
 
+  .skills-content {
+    @apply flex flex-row flex-wrap;
+  }
+
+  .skills-content > div {
+    @apply flex-1 basis-1/2;
+  }
+
   .fade-in-section {
     @apply opacity-0;
     transform: translateY(20vh);

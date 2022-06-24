@@ -45,6 +45,11 @@ const frontendArr: Skill[] = [
     devicon: "devicon-tailwindcss-plain",
     caption: "TailwindCSS",
   },
+  {
+    id: generateUniqueID(),
+    devicon: "devicon-redux-original",
+    caption: "Redux",
+  }
 ];
 
 const backendArr: Skill[] = [
@@ -106,6 +111,11 @@ const devOpsArr: Skill[] = [
     id: generateUniqueID(),
     devicon: "devicon-azure-plain",
     caption: "Azure",
+  },
+  {
+    id: generateUniqueID(),
+    devicon: "devicon-jest-plain",
+    caption: "Jest",
   },
 ];
 
