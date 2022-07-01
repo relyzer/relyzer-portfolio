@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import FadeInSection from "../animation/FadeInSection";
+import profilePicture from "../../public/me.jpg"
 
 const About = () => {
   return (
@@ -24,11 +25,12 @@ const About = () => {
             <figure className="p-4 md:hidden">
               <Image
                 className="rounded-full"
-                src="/me.jpg"
+                src={profilePicture}
                 alt="An image of Kevin Tan"
                 width={300}
                 height={300}
                 layout="responsive"
+                placeholder="blur"
               ></Image>
             </figure>
             <p className="px-4 py-2 md:mt-2 leading-relaxed text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold tracking-tight">

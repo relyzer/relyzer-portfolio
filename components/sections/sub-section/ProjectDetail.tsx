@@ -12,13 +12,11 @@ type Props = {
 
 const ProjectDetail = ({ arr }: Props) => {
   let inputIsEven: boolean;
-
   if (arr.length % 2 == 0) {
     inputIsEven = true;
   } else {
     inputIsEven = false;
   }
-
   return (
     <div
       className={

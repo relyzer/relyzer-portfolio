@@ -15,6 +15,7 @@ As my skills improve, I hope to add more cool features to my site, so stay tuned
 7.) Add logo for home button  
 8.) Fix header issue in certificates page  
 9.) Improve horizontal scroll speed of certificate gallery  
+10.) Change or fix the design of the skills section  
 
 ## Website initially started from:
 

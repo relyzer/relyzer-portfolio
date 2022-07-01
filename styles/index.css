@@ -122,7 +122,10 @@
   /* For Devicon (skill icons) */
   i {
     @apply text-4xl text-green-turquoise-green-two;
-    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
+    @apply md:text-3xl;
+    @apply lg:text-4xl;
+    @apply xl:text-5xl;
+    @apply 2xl:text-6xl;
   }
 
   figcaption {
@@ -461,6 +464,14 @@
     @apply text-white-cultured;
     /* box-shadow: 0 0 5px #40916c; */
     text-shadow: 0 0 5px #40916c;
+  }
+
+  .skills-content {
+    @apply md:flex md:flex-row md:flex-wrap;
+  }
+
+  .skills-content > div {
+    @apply md:flex-1 md:basis-1/2;
   }
 
   .fade-in-section {
