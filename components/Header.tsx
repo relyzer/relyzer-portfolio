@@ -83,22 +83,22 @@ const Header = ({ width }: Props) => {
         <nav className="flex flex-row z-10 lg:basis-1/2 xl:basis-1/3 p-2 w-full h-full text-center font-medium text-base lg:text-lg 2xl:text-xl align-middle space-x-6 md:space-x-12 items-center">
           <Link href="/#about">
             <a className="font-sans link hover-link transition-colors">
-              <SoundButton name="About" isSoundEnabled={enableSound} disableTab={true} />
+              <SoundButton name="About" isSoundEnabled={enableSound} />
             </a>
           </Link>
           <Link href="/#experience">
             <a className="font-sans link hover-link transition-colors">
-              <SoundButton name="Experience" isSoundEnabled={enableSound} disableTab={true} />
+              <SoundButton name="Experience" isSoundEnabled={enableSound} />
             </a>
           </Link>
           <Link href="/#skill">
             <a className="font-sans link hover-link transition-colors">
-              <SoundButton name="Skills" isSoundEnabled={enableSound} disableTab={true} />
+              <SoundButton name="Skills" isSoundEnabled={enableSound} />
             </a>
           </Link>
           <Link href="/#portfolio">
             <a className="font-sans link hover-link transition-colors">
-              <SoundButton name="Portfolio" isSoundEnabled={enableSound} disableTab={true} />
+              <SoundButton name="Portfolio" isSoundEnabled={enableSound} />
             </a>
           </Link>
         </nav>

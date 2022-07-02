@@ -5,12 +5,11 @@ type Props = {
   name: string;
   isSoundEnabled: boolean;
   className?: string;
-  disableTab?: boolean;
 };
 
 // Sound credit: https://freesound.org/people/nsstudios/sounds/321103/
 
-const SoundButton = ({ name, isSoundEnabled, className, disableTab }: Props) => {
+const SoundButton = ({ name, isSoundEnabled, className }: Props) => {
   // For onMouseLeave event
   //   const [play, { stop }] = useSound("./button_sound.wav");
   const [playbackRate] = React.useState(1.4);
@@ -20,13 +19,12 @@ const SoundButton = ({ name, isSoundEnabled, className, disableTab }: Props) => 
     soundEnabled: isSoundEnabled,
   });
   return (
-    <button
+    <div
       onMouseEnter={() => play()}
       className={`${className ? className : ""}`}
-      tabIndex={disableTab && -1}
     >
       {name}
-    </button>
+    </div>
   );
 };
 

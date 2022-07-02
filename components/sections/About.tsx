@@ -38,7 +38,7 @@ const About = () => {
               <span className="text-green-medium-spring-green">Kevin</span>.
             </p>
             <p className="px-4 py-2 leading-relaxed tracking-tight">
-              An IT graduate with professional experience in full-stack software
+              An Information Technology graduate with professional experience in full-stack software
               engineering and knowledge in UX design fundamentals. <br /> <br />
               With interests in web, mobile, mixed reality and games
               development, I strive to become a T-shaped developer who follows
