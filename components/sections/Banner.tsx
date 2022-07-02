@@ -50,7 +50,7 @@ const Banner = () => {
         </div>
         <h1 className="text-center p-2 text-light-up">Kev&#305;n Tan</h1>
         <h3 className="text-center p-4 text-light-up-two">
-          Software Engineer | UX Designer
+          Software Engineer
         </h3>
         <div className="absolute left-0 right-0 w-0 m-auto mt-20 lg:mt-24 xl:mt-32 2xl:mt-40">
           <span className="flex flex-row justify-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">

@@ -16,7 +16,7 @@ const ReadMore = ({ text, className }: Props) => {
       {toggleReadMore ? text.slice(0, 170) : text}
       <span
         onClick={handleReadMore}
-        className="italic font-semibold cursor-pointer text-green-turquoise-green-two hover:text-green-turquoise-green"
+        className="italic font-semibold cursor-pointer motion-safe:animate-pulse text-green-turquoise-green-two hover:text-green-turquoise-green"
       >
         {text.length > 170
           ? toggleReadMore

@@ -27,8 +27,8 @@ const ProjectDetail = ({ arr }: Props) => {
     >
       {arr.map((project: Project) => (
         <div className="lg:basis-1/2 p-4 flex justify-center" key={project.id}>
-          {/* bg-ocean-green */}
-          <div className="border-2 border-green-illuminating-emerald rounded-lg h-full p-4 md:p-6 lg:p-8 2xl:p-10">
+          {/* border-2 border-green-illuminating-emerald */}
+          <div className="animated-box in rounded-lg h-full p-4 md:p-6 lg:p-8 2xl:p-10">
             <figure className="flex lg:p-4 justify-center">
               <Image
                 className="rounded-lg"
@@ -58,7 +58,7 @@ const ProjectDetail = ({ arr }: Props) => {
                   className="p-2 lg:p-3 xl:p-4 leading-relaxed tracking-tight max-w-prose"
                 />
               </div>
-              <div className="flex flex-row p-1">
+              <div className="flex flex-row p-1 space-x-2 2xl:space-x-4">
                 {project.demoUrl && (
                   <div className="">
                     <LinkButton
