@@ -8,7 +8,7 @@ const projectArr: Project[] = [
     description:
       "Personal website to tell my story and showcase my projects.\nComes with Unity WebGL for gameplay demonstration and PDFs to display my online course certificates.",
     snapshotUrl: "/images/Portfolio-snapshot.png",
-    altText: "A screenshot image of Kevin's website",
+    altText: "Screenshot of Kevin's portfolio website",
     githubUrl: "https://github.com/relyzer/relyzer.github.io",
     techStack: [
       {
@@ -38,7 +38,7 @@ const projectArr: Project[] = [
       "Mobile application based off an outdoor-social concept, designed to connect people with the environment around them.\nThe word 'Amprise' is a twist on 'emprise', which is a synonym to the words 'adventure', 'undertaking', 'quest'.\n\nTake a look at the UX case study for more information!",
     demoUrl: "http://uxfol.io/p/kevintyh/045b2e10",
     snapshotUrl: "/images/Amprise-ux.png",
-    altText: "Images of a mobile application's user interface mock-ups",
+    altText: "Mobile application's user interface mock-ups",
     techStack: [
       {
         tech: "Swift",
@@ -57,7 +57,7 @@ const projectArr: Project[] = [
     id: generateUniqueID(),
     title: "Oracle Technical Challenge",
     description:
-      "A simple movie app created in less than a week for Oracle's take-home challenge, that displays programs from a JSON file and calls an external API to produce fun facts derived from the program's release year.\n\nIn this project, I took on the additional challenge of learning Redux, Cypress e2e testing and Jest/React Testing library within a short timeframe.",
+      "A simple program listing website created in less than a week for Oracle's take-home challenge, that displays programs from a JSON file and calls an external API to produce fun facts derived from the program's release year.\n\nIn this project, I took on the additional challenge of learning Redux, Cypress e2e testing and Jest/React Testing library within a short timeframe.",
     demoUrl: "https://oracle-technical-challenge.vercel.app/",
     snapshotUrl: "/images/oracle-challenge-snapshot.png",
     altText: "Website displaying images of movies",
@@ -87,10 +87,10 @@ const projectArr: Project[] = [
     id: generateUniqueID(),
     title: "Citadel VR Experience",
     description:
-      "Mini project created using Unity, Maya 3D modelling and Vuforia virtual reality toolkit (VRTK).\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
+      "Mini project created using Unity, Maya 3D modeling and Vuforia virtual reality toolkit (VRTK).\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
     demoUrl: "/citadel",
     snapshotUrl: "/images/vr-demo-1.png",
-    altText: "An image of a three dimensional virtual reality environment",
+    altText: "Three dimensional virtual reality environment",
     techStack: [
       {
         tech: "Unity",

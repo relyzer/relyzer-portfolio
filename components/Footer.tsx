@@ -5,9 +5,6 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 const Footer = () => {
-  // const [playbackRate] = React.useState(1.7);
-  // const [play] = useSound("./button_sound.wav", { playbackRate, volume: 0.4 });
-
   return (
     <footer className="bg-green-dark-jungle-green mt-auto p-2">
       <div className="flex flex-row items-center">
@@ -16,12 +13,12 @@ const Footer = () => {
         </span>
         <span className="flex-1 text-right text-2xl lg:text-3xl">
           <Link href="https://www.linkedin.com/in/kevintyh/" passHref={true}>
-            <a className="mr-8 icon" /* onMouseEnter={() => play()} */>
+            <a className="mr-8 icon" aria-label="Kevin's Linkedin profile">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </Link>
           <Link href="https://github.com/relyzer" passHref={true}>
-            <a className="mr-10 icon" /* onMouseEnter={() => play()} */>
+            <a className="mr-10 icon" aria-label="Kevin's Github profile">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </Link>

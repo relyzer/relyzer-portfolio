@@ -6,6 +6,10 @@ module.exports = {
   future: {
     webpack5: true
   },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   webpack: (config) => {
     // load worker files as a urls with `file-loader`
     config.module.rules.unshift({

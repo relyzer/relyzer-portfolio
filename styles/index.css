@@ -66,12 +66,12 @@
   }
 
   h2 {
-    @apply font-sans text-xl;
-    @apply sm:text-2xl;
-    @apply md:text-3xl;
-    @apply lg:text-4xl;
-    @apply xl:text-5xl;
-    @apply 2xl:text-6xl;
+    @apply font-sans text-lg;
+    @apply sm:text-lg;
+    @apply md:text-xl;
+    @apply lg:text-2xl;
+    @apply xl:text-3xl;
+    @apply 2xl:text-5xl;
   }
   h3 {
     @apply font-sans text-lg;
@@ -298,14 +298,14 @@
     @apply w-10 h-10 overflow-hidden;
   }
 
-  /* The animation above the 'i' in the name. May need to optimise this further for other devices */
+  /* The animation above the 'i' in the name */
   .atom-spinner {
     @apply scale-75 -translate-y-1 -translate-x-7;
     @apply sm:scale-90 sm:-translate-x-[1.87rem];
-    @apply md:scale-100 md:-translate-x-[1.88rem];
+    @apply md:scale-100 md:-translate-x-[1.88rem] md:-translate-y-1;
     @apply lg:scale-125 lg:-translate-x-[2.05rem] lg:-translate-y-1;
-    @apply xl:scale-150 xl:-translate-x-[2.25rem] xl:translate-y-0;
-    @apply 2xl:scale-[2.5] 2xl:-translate-x-[3.05rem] 2xl:translate-y-2;
+    @apply xl:scale-150 xl:-translate-x-[2.22rem] xl:-translate-y-1;
+    @apply 2xl:scale-[2.5] 2xl:-translate-x-[3.05rem] 2xl:translate-y-1;
   }
 
   .atom-spinner .spinner-inner {
