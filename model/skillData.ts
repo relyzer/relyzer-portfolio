@@ -49,7 +49,7 @@ const frontendArr: Skill[] = [
     id: generateUniqueID(),
     devicon: "devicon-redux-original",
     caption: "Redux",
-  }
+  },
 ];
 
 const backendArr: Skill[] = [

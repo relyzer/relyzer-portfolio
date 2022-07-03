@@ -66,8 +66,11 @@ const Layout = ({ children, title = "Default title" }: Props) => {
         <meta name="theme-color" content="#ffffff" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Kevin Tan is a passionate Software Engineer based in Singapore, with professional full-stack development experience and exposure to user experience knowledge."></meta>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" async></script>
+        <meta
+          name="description"
+          content="Kevin Tan is a passionate Software Engineer based in Singapore, with professional full-stack development experience and exposure to user experience knowledge."
+        ></meta>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
       </Head>
       <Header width={windowWidth} />
       <div className="">

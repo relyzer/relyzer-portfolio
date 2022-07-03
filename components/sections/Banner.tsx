@@ -6,7 +6,6 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import DOTS from "vanta/dist/vanta.dots.min";
 
 const Banner = () => {
-
   const [vantaEffect, setVantaEffect]: [any, any] = useState(0);
   const vantaRef = useRef(null);
   useEffect(() => {
@@ -33,9 +32,11 @@ const Banner = () => {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
-  
+
   return (
-    <section /* ref={vantaRef} */ className="flex relative justify-center items-center -mt-12 h-screen p-2 sm:p-6 md:p-20 rounded-b-xl">
+    <section
+      /* ref={vantaRef} */ className="flex relative justify-center items-center -mt-12 h-screen p-2 sm:p-6 md:p-20 rounded-b-xl"
+    >
       <div className="absolute h-screen w-full">
         <div ref={vantaRef} className="fixed h-screen w-full"></div>
       </div>
@@ -49,9 +50,7 @@ const Banner = () => {
           </div>
         </div>
         <h1 className="text-center p-2 text-light-up">Kev&#305;n Tan</h1>
-        <h2 className="text-center p-4 text-light-up-two">
-          Software Engineer
-        </h2>
+        <h2 className="text-center p-4 text-light-up-two">Software Engineer</h2>
         <div className="absolute left-0 right-0 w-0 m-auto mt-20 lg:mt-24 xl:mt-32 2xl:mt-40">
           <span className="flex flex-row justify-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
             <Link href="https://www.linkedin.com/in/kevintyh/" passHref={true}>
