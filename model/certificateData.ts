@@ -16,4 +16,4 @@ const certificateArr: OnlineCertificate[] = [
   },
 ];
 
-export { certificateArr }
+export { certificateArr };

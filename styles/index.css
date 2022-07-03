@@ -3,44 +3,43 @@
 @tailwind utilities;
 
 @layer base {
-
   @font-face {
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 400;
   }
 
   @font-face {
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 500;
   }
 
   @font-face {
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 600;
   }
 
   @font-face {
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 700;
   }
 
   @font-face {
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 800;
   }
 
   @font-face {
-    font-family: 'Orbitron', sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 900;
   }
 
   @font-face {
-    font-family: 'Glegoo', serif;
+    font-family: "Glegoo", serif;
     font-weight: 400;
   }
 
   @font-face {
-    font-family: 'Glegoo', serif;
+    font-family: "Glegoo", serif;
     font-weight: 700;
   }
 
@@ -377,7 +376,7 @@
     }
     21% {
       @apply text-green-medium-spring-green;
-      text-shadow: 0px 0px 10px #52FFB8;
+      text-shadow: 0px 0px 10px #52ffb8;
     }
     23% {
       @apply text-gray-pale-silver;
@@ -385,7 +384,7 @@
     }
     24% {
       @apply text-green-medium-spring-green;
-      text-shadow: 0px 0px 10px #52FFB8;
+      text-shadow: 0px 0px 10px #52ffb8;
     }
     25% {
       @apply text-gray-pale-silver;
@@ -393,7 +392,7 @@
     }
     26% {
       @apply text-green-medium-spring-green;
-      text-shadow: 0px 0px 10px #52FFB8;
+      text-shadow: 0px 0px 10px #52ffb8;
     }
     30% {
       @apply text-gray-battleship-grey;
@@ -405,11 +404,11 @@
     }
     80% {
       @apply text-green-medium-spring-green;
-      text-shadow: 0px 0px 10px #52FFB8;
+      text-shadow: 0px 0px 10px #52ffb8;
     }
     100% {
       @apply text-green-medium-spring-green;
-      text-shadow: 0px 0px 10px #52FFB8;
+      text-shadow: 0px 0px 10px #52ffb8;
     }
   }
 
@@ -485,7 +484,7 @@
   .fade-in-section.is-visible {
     @apply opacity-100 transform-none visible flex;
   }
-  
+
   .show-header {
     @apply transition-all;
     transform-origin: 100% 0%;
@@ -521,19 +520,31 @@
   .animated-box {
     @apply relative;
   }
-  
+
   .animated-box:after {
-    content: '';
+    content: "";
     @apply absolute top-0 left-0 right-0 bottom-0 rounded-md;
-    background: linear-gradient(120deg, #52b788, #1B4332, #52FFB8);
+    background: linear-gradient(120deg, #52b788, #1b4332, #52ffb8);
     background-size: 300% 300%;
-    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+    clip-path: polygon(
+      0% 100%,
+      3px 100%,
+      3px 3px,
+      calc(100% - 3px) 3px,
+      calc(100% - 3px) calc(100% - 3px),
+      3px calc(100% - 3px),
+      3px 100%,
+      100% 100%,
+      100% 0%,
+      0% 0%
+    );
   }
-  
+
   .animated-box.in:after {
-    animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+    animation: frame-enter 1s forwards ease-in-out reverse,
+      gradient-animation 4s ease-in-out infinite;
   }
-  
+
   /* motion */
   @keyframes gradient-animation {
     0% {
@@ -546,22 +557,77 @@
       background-position: 15% 0%;
     }
   }
-  
+
   @keyframes frame-enter {
     0% {
-      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+      clip-path: polygon(
+        0% 100%,
+        3px 100%,
+        3px 3px,
+        calc(100% - 3px) 3px,
+        calc(100% - 3px) calc(100% - 3px),
+        3px calc(100% - 3px),
+        3px 100%,
+        100% 100%,
+        100% 0%,
+        0% 0%
+      );
     }
     25% {
-      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+      clip-path: polygon(
+        0% 100%,
+        3px 100%,
+        3px 3px,
+        calc(100% - 3px) 3px,
+        calc(100% - 3px) calc(100% - 3px),
+        calc(100% - 3px) calc(100% - 3px),
+        calc(100% - 3px) 100%,
+        100% 100%,
+        100% 0%,
+        0% 0%
+      );
     }
     50% {
-      clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+      clip-path: polygon(
+        0% 100%,
+        3px 100%,
+        3px 3px,
+        calc(100% - 3px) 3px,
+        calc(100% - 3px) 3px,
+        calc(100% - 3px) 3px,
+        calc(100% - 3px) 3px,
+        calc(100% - 3px) 3px,
+        100% 0%,
+        0% 0%
+      );
     }
     75% {
-      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+      -webkit-clip-path: polygon(
+        0% 100%,
+        3px 100%,
+        3px 3px,
+        3px 3px,
+        3px 3px,
+        3px 3px,
+        3px 3px,
+        3px 3px,
+        3px 0%,
+        0% 0%
+      );
     }
     100% {
-      -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+      -webkit-clip-path: polygon(
+        0% 100%,
+        3px 100%,
+        3px 100%,
+        3px 100%,
+        3px 100%,
+        3px 100%,
+        3px 100%,
+        3px 100%,
+        3px 100%,
+        0% 100%
+      );
     }
   }
 }

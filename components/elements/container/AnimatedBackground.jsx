@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import DOTS from "vanta/dist/vanta.dots.min";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const AnimatedBackground = ({ children }) => {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -33,7 +33,7 @@ const AnimatedBackground = ({ children }) => {
 };
 
 AnimatedBackground.propTypes = {
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};
 
 export default AnimatedBackground;

@@ -2,14 +2,13 @@ import React, { RefObject } from "react";
 
 import FadeInSection from "../animation/FadeInSection";
 import { ProjectDetail } from "./sub-section";
-import { projectArr } from "../../model/projectData"
+import { projectArr } from "../../model/projectData";
 
 type Props = {
   ref?: RefObject<HTMLInputElement>;
 };
 
 const Portfolio = ({ ref }: Props) => {
-
   return (
     <FadeInSection>
       <section id="portfolio" ref={ref} className="section">

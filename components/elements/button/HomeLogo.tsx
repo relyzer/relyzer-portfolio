@@ -6,7 +6,13 @@ const HomeLogo = () => {
   return (
     <Link href="/">
       <button>
-        <Image className="" src="/images/kevin-logo.png" alt="kevintyh logo" width={60} height={60}/>
+        <Image
+          className=""
+          src="/images/kevin-logo.png"
+          alt="kevintyh logo"
+          width={60}
+          height={60}
+        />
       </button>
     </Link>
   );

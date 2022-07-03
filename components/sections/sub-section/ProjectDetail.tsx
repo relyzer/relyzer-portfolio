@@ -38,62 +38,59 @@ const ProjectDetail = ({ arr }: Props) => {
                 src={project.snapshotUrl}
               />
             </figure>
-              <h4 className="p-1 lg:p-2 tracking-wide font-bold text-center">
-                {project.title}
-              </h4>
-              <div className="flex flex-row flex-wrap">
-                {project.tags &&
-                  project.tags.map((tag) => (
-                    <div
-                      className="pr-2 py-1 md:py-0 lg:py-2"
-                      key={generateUniqueID()}
-                    >
-                      <ProjectTag tagTitle={tag} />
-                    </div>
-                  ))}
-              </div>
-              <div className="flex justify-center">
-                <ReadMore
-                  text={project.description}
-                  className="p-2 lg:p-3 xl:p-4 leading-relaxed tracking-tight max-w-prose"
-                />
-              </div>
-              <div className="flex flex-row p-1 space-x-2 2xl:space-x-4">
-                {project.demoUrl && (
-                  <div className="">
-                    <LinkButton
-                      text={
-                        project.demoButtonText ? project.demoButtonText : "Demo"
-                      }
-                      linkUrl={project.demoUrl}
-                      devicon=""
-                      passHref={project.redirectExternal}
-                    />
+            <h4 className="p-1 lg:p-2 tracking-wide font-bold text-center">
+              {project.title}
+            </h4>
+            <div className="flex flex-row flex-wrap">
+              {project.tags &&
+                project.tags.map((tag) => (
+                  <div
+                    className="pr-2 py-1 md:py-0 lg:py-2"
+                    key={generateUniqueID()}
+                  >
+                    <ProjectTag tagTitle={tag} />
                   </div>
-                )}
-                {project.githubUrl && (
-                  <div className="">
-                    <LinkButton
-                      text="Github Repo"
-                      linkUrl={project.githubUrl}
-                      devicon="devicon-github-original"
-                    />
-                  </div>
-                )}
-              </div>
-              {/* Map the tech stack */}
-              {project.techStack && (
-                <div className="flex flex-row flex-wrap pt-2 lg:pt-4">
-                  {project.techStack.map((tech) => (
-                    <div className="p-1" key={generateUniqueID()}>
-                      <TechLabel
-                        labelTitle={tech.tech}
-                        devicon={tech.devicon}
-                      />
-                    </div>
-                  ))}
+                ))}
+            </div>
+            <div className="flex justify-center">
+              <ReadMore
+                text={project.description}
+                className="p-2 lg:p-3 xl:p-4 leading-relaxed tracking-tight max-w-prose"
+              />
+            </div>
+            <div className="flex flex-row p-1 space-x-2 2xl:space-x-4">
+              {project.demoUrl && (
+                <div className="">
+                  <LinkButton
+                    text={
+                      project.demoButtonText ? project.demoButtonText : "Demo"
+                    }
+                    linkUrl={project.demoUrl}
+                    devicon=""
+                    passHref={project.redirectExternal}
+                  />
                 </div>
               )}
+              {project.githubUrl && (
+                <div className="">
+                  <LinkButton
+                    text="Github Repo"
+                    linkUrl={project.githubUrl}
+                    devicon="devicon-github-original"
+                  />
+                </div>
+              )}
+            </div>
+            {/* Map the tech stack */}
+            {project.techStack && (
+              <div className="flex flex-row flex-wrap pt-2 lg:pt-4">
+                {project.techStack.map((tech) => (
+                  <div className="p-1" key={generateUniqueID()}>
+                    <TechLabel labelTitle={tech.tech} devicon={tech.devicon} />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       ))}

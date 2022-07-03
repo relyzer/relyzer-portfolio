@@ -11,7 +11,7 @@ type Props = {
 
 const MuteButton = ({ handleMute, className, isSoundEnabled }: Props) => {
   return (
-    <button onClick={handleMute} className={className} aria-label="Mute" >
+    <button onClick={handleMute} className={className} aria-label="Mute">
       {isSoundEnabled && (
         <span className="text-sm">
           <span className="text-lg">

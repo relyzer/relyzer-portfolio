@@ -106,4 +106,4 @@ const projectArr: Project[] = [
   },
 ];
 
-export { projectArr }
+export { projectArr };

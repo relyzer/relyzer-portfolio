@@ -1,1 +1,1 @@
-declare module 'vanta/dist/vanta.dots.min';
+declare module "vanta/dist/vanta.dots.min";
