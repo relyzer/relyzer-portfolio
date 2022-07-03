@@ -1,21 +1,17 @@
-# relyzer.github.io
+# Kevin's portfolio website
 
-A simple, first iteration of my personal website!  
-This project also serves as a training ground for my front-end skills and clean coding.  
+My very own personal website~!  
+This project also serves as a training ground for my front-end skills as well as to express myself through my design.  
 As my skills improve, I hope to add more cool features to my site, so stay tuned!  
 
 ## To do:
 
 1.) Further improve aesthetics and responsive design! Add more interactive / dynamic elements!  
 2.) Make it even prettier!   
-3.) Separate the data into another folder/fileset from the components (SOC principle)  
-4.) Add pagination to project section (also consider the necessity and the benefit for UX) or a hover animation  
-5.) Add a website loading animation upon first entry  
-6.) Properly utilise Next.js static props function  
-7.) Add logo for home button  
-8.) Fix header issue in certificates page  
-9.) Improve horizontal scroll speed of certificate gallery  
-10.) Change or fix the design of the skills section  
+3.) Add pagination to project section (also consider the necessity and the benefit for UX) or a hover animation  
+4.) Add a website loading animation upon first entry  
+5.) Properly utilise Next.js static props function  
+6.) Improve horizontal scroll speed of certificate gallery  
 
 ## Website initially started from:
 

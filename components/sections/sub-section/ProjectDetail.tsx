@@ -30,7 +30,7 @@ const ProjectDetail = ({ arr }: Props) => {
           className="lg:basis-1/2 p-4 flex justify-center"
           key={project.id}
         >
-          <div className="animated-box in rounded-lg h-full p-4 md:p-6 lg:p-8 2xl:p-10">
+          <div className="animated-box flex flex-col in rounded-lg h-full p-4 md:p-6 lg:p-8 2xl:p-10">
             <figure className="flex lg:p-4 justify-center">
               <Image
                 className="rounded-lg"
@@ -40,14 +40,14 @@ const ProjectDetail = ({ arr }: Props) => {
                 src={project.snapshotUrl}
               />
             </figure>
-            <h4 className="p-2 lg:p-3 leading-loose tracking-wide font-bold text-center">
+            <h4 className="p-2 md:p-3 lg:p-4 tracking-wide font-bold text-center">
               {project.title}
             </h4>
             <div className="flex flex-row flex-wrap">
               {project.tags &&
                 project.tags.map((tag) => (
                   <div
-                    className="pr-3 py-1 md:py-1 lg:py-4"
+                    className="pr-3 py-1 md:py-1 lg:py-2"
                     key={generateUniqueID()}
                   >
                     <ProjectTag tagTitle={tag} />
@@ -60,39 +60,47 @@ const ProjectDetail = ({ arr }: Props) => {
                 className="p-2 lg:p-3 xl:p-4 leading-relaxed tracking-tight max-w-prose"
               />
             </div>
-            <div className="flex flex-row px-3 py-5 space-x-2 2xl:space-x-4">
-              {project.demoUrl && (
-                <div className="">
-                  <LinkButton
-                    text={
-                      project.demoButtonText ? project.demoButtonText : "Demo"
-                    }
-                    linkUrl={project.demoUrl}
-                    devicon=""
-                    passHref={project.redirectExternal}
-                  />
-                </div>
-              )}
-              {project.githubUrl && (
-                <div className="">
-                  <LinkButton
-                    text="Github"
-                    linkUrl={project.githubUrl}
-                    devicon="devicon-github-original"
-                  />
+            <div className="mt-auto">
+              <div className="flex flex-row px-2 py-4 md:px-3 md:py-5 space-x-2 2xl:space-x-4">
+                {project.demoUrl && (
+                  <div className="">
+                    <LinkButton
+                      text={
+                        project.demoButtonText ? project.demoButtonText : "Demo"
+                      }
+                      linkUrl={project.demoUrl}
+                      devicon=""
+                      passHref={project.redirectExternal}
+                    />
+                  </div>
+                )}
+                {project.githubUrl && (
+                  <div className="">
+                    <LinkButton
+                      text="Github"
+                      linkUrl={project.githubUrl}
+                      devicon="devicon-github-original"
+                    />
+                  </div>
+                )}
+              </div>
+              {/* Map the tech stack */}
+              {project.techStack && (
+                <div className="flex flex-row flex-wrap pt-2 lg:pt-4">
+                  {project.techStack.map((tech) => (
+                    <div
+                      className="px-1 py-1 pr-1 md:py-2 md:pr-2 xl:py-3 xl:pr-3"
+                      key={generateUniqueID()}
+                    >
+                      <TechLabel
+                        labelTitle={tech.tech}
+                        devicon={tech.devicon}
+                      />
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
-            {/* Map the tech stack */}
-            {project.techStack && (
-              <div className="flex flex-row flex-wrap pt-2 lg:pt-4">
-                {project.techStack.map((tech) => (
-                  <div className="px-1 pr-3" key={generateUniqueID()}>
-                    <TechLabel labelTitle={tech.tech} devicon={tech.devicon} />
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         </article>
       ))}
