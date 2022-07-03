@@ -55,8 +55,8 @@ const Layout = ({ children, title = "Default title" }: Props) => {
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
         />
         <link
           rel="stylesheet"
@@ -64,14 +64,10 @@ const Layout = ({ children, title = "Default title" }: Props) => {
         ></link>
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <script
-          src="https://kit.fontawesome.com/fd07a2fb4b.js"
-          crossOrigin="anonymous"
-        ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <meta name="description" content="Kevin Tan is a passionate Software Engineer based in Singapore, with professional full-stack development experience and exposure to user experience knowledge."></meta>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" async></script>
       </Head>
       <Header width={windowWidth} />
       <div className="">

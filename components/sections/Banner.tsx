@@ -49,21 +49,23 @@ const Banner = () => {
           </div>
         </div>
         <h1 className="text-center p-2 text-light-up">Kev&#305;n Tan</h1>
-        <h3 className="text-center p-4 text-light-up-two">
+        <h2 className="text-center p-4 text-light-up-two">
           Software Engineer
-        </h3>
+        </h2>
         <div className="absolute left-0 right-0 w-0 m-auto mt-20 lg:mt-24 xl:mt-32 2xl:mt-40">
           <span className="flex flex-row justify-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
             <Link href="https://www.linkedin.com/in/kevintyh/" passHref={true}>
               <a
-                className="px-4 lg:px-5 xl:px-6 2xl:px-8 icon fade-in-text" /* onMouseEnter={() => play()} */
+                className="px-4 lg:px-5 xl:px-6 2xl:px-8 icon fade-in-text"
+                aria-label="Kevin's Linkedin profile"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </Link>
             <Link href="https://github.com/relyzer" passHref={true}>
               <a
-                className="px-4 lg:px-5 xl:px-6 2xl:px-8 icon fade-in-text" /* onMouseEnter={() => play()} */
+                className="px-4 lg:px-5 xl:px-6 2xl:px-8 icon fade-in-text"
+                aria-label="Kevin's Github profile"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
