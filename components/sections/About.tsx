@@ -35,7 +35,17 @@ const About = () => {
             </figure>
             <p className="px-4 py-2 md:mt-2 leading-relaxed text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold tracking-tight">
               Hello, I'm{" "}
-              <span className="text-green-medium-spring-green">Kevin</span>.
+              <span
+                className="text-green-medium-spring-green text-flip"
+                role="text"
+              >
+                <span style={{ "--i": 1 } as React.CSSProperties}>K</span>
+                <span style={{ "--i": 2 } as React.CSSProperties}>e</span>
+                <span style={{ "--i": 3 } as React.CSSProperties}>v</span>
+                <span style={{ "--i": 4 } as React.CSSProperties}>i</span>
+                <span style={{ "--i": 5 } as React.CSSProperties}>n</span>
+              </span>
+              .
             </p>
             <p className="px-4 py-2 leading-relaxed tracking-tight">
               An Information Technology graduate with professional experience in

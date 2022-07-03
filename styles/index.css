@@ -362,6 +362,26 @@
     }
   }
 
+  /* Reference: https://codepen.io/WaadAlnwar/details/dyXGNwM */
+
+  .text-flip {
+    position: relative;
+  }
+
+  .text-flip span {
+    position: relative;
+    display: inline-block;
+    animation: animate-text-flip 6s infinite;
+    animation-delay: calc(0.5s * var(--i));
+  }
+
+  @keyframes animate-text-flip {
+    0%,
+    80% {
+      transform: rotateY(360deg);
+    }
+  }
+
   /* Reference: https://codepen.io/Steve-H/pen/VqzQZz */
 
   .text-light-up {
