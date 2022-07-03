@@ -12,12 +12,12 @@ import {
 
 const IndexPage = () => {
   return (
-    <Layout title="Kevin Tan - Software Engineer | UX Designer">
+    <Layout title="Kevin Tan - Software Engineer">
       <Banner />
       <About />
-      <Experience /* ref={domRef} */ />
-      <Skills /* ref={domRef} */ />
-      <Portfolio /* ref={domRef} */ />
+      <Experience />
+      <Skills />
+      <Portfolio />
     </Layout>
   );
 };

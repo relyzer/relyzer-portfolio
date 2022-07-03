@@ -26,7 +26,7 @@ const Skills = ({ ref }: Props) => {
           <div className="skills-content">
             <SkillDetail
               arr={programmingArr}
-              skillTitle="Programming / Mark-up languages"
+              skillTitle="Programming languages"
             />
             <SkillDetail
               arr={frontendArr}
@@ -34,7 +34,7 @@ const Skills = ({ ref }: Props) => {
             />
             <SkillDetail arr={backendArr} skillTitle="Back-end Technologies" />
             <SkillDetail arr={mobileArr} skillTitle="Mobile App Technologies" />
-            <SkillDetail arr={designArr} skillTitle="UI/UX Design" />
+            <SkillDetail arr={designArr} skillTitle="UI / UX Design" />
             <SkillDetail
               arr={devOpsArr}
               skillTitle="DevOps / Cloud / Testing"

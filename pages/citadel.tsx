@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 
 const CitadelPage = () => {
   return (
-    <Layout title="Citadel Gateway VR experience">
+    <Layout title="Kevin Tan - Citadel VR experience">
       <div className="flex justify-center items-center h-screen">
         <iframe
           id="gatewayVR"

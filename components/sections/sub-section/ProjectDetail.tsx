@@ -26,8 +26,10 @@ const ProjectDetail = ({ arr }: Props) => {
       }
     >
       {arr.map((project: Project) => (
-        <div className="lg:basis-1/2 p-4 flex justify-center" key={project.id}>
-          {/* border-2 border-green-illuminating-emerald */}
+        <article
+          className="lg:basis-1/2 p-4 flex justify-center"
+          key={project.id}
+        >
           <div className="animated-box in rounded-lg h-full p-4 md:p-6 lg:p-8 2xl:p-10">
             <figure className="flex lg:p-4 justify-center">
               <Image
@@ -38,14 +40,14 @@ const ProjectDetail = ({ arr }: Props) => {
                 src={project.snapshotUrl}
               />
             </figure>
-            <h4 className="p-1 lg:p-2 tracking-wide font-bold text-center">
+            <h4 className="p-2 lg:p-3 leading-loose tracking-wide font-bold text-center">
               {project.title}
             </h4>
             <div className="flex flex-row flex-wrap">
               {project.tags &&
                 project.tags.map((tag) => (
                   <div
-                    className="pr-2 py-1 md:py-0 lg:py-2"
+                    className="pr-3 py-1 md:py-1 lg:py-4"
                     key={generateUniqueID()}
                   >
                     <ProjectTag tagTitle={tag} />
@@ -58,7 +60,7 @@ const ProjectDetail = ({ arr }: Props) => {
                 className="p-2 lg:p-3 xl:p-4 leading-relaxed tracking-tight max-w-prose"
               />
             </div>
-            <div className="flex flex-row p-1 space-x-2 2xl:space-x-4">
+            <div className="flex flex-row px-3 py-5 space-x-2 2xl:space-x-4">
               {project.demoUrl && (
                 <div className="">
                   <LinkButton
@@ -74,7 +76,7 @@ const ProjectDetail = ({ arr }: Props) => {
               {project.githubUrl && (
                 <div className="">
                   <LinkButton
-                    text="Github Repo"
+                    text="Github"
                     linkUrl={project.githubUrl}
                     devicon="devicon-github-original"
                   />
@@ -85,14 +87,14 @@ const ProjectDetail = ({ arr }: Props) => {
             {project.techStack && (
               <div className="flex flex-row flex-wrap pt-2 lg:pt-4">
                 {project.techStack.map((tech) => (
-                  <div className="p-1" key={generateUniqueID()}>
+                  <div className="px-1 pr-3" key={generateUniqueID()}>
                     <TechLabel labelTitle={tech.tech} devicon={tech.devicon} />
                   </div>
                 ))}
               </div>
             )}
           </div>
-        </div>
+        </article>
       ))}
     </div>
   );

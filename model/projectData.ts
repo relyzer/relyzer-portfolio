@@ -6,7 +6,7 @@ const projectArr: Project[] = [
     id: generateUniqueID(),
     title: "Portfolio Website",
     description:
-      "Personal website to tell my story and showcase my projects.\nComes with Unity WebGL for gameplay demonstration and PDFs to display my online course certificates.",
+      "Personal website to tell my story and showcase my projects.\n\n Equipped with the ability to run Unity WebGL for gameplay demonstration and PDF viewer to display my online course certificates.",
     snapshotUrl: "/images/Portfolio-snapshot.png",
     altText: "Screenshot of Kevin's portfolio website",
     githubUrl: "https://github.com/relyzer/relyzer.github.io",
@@ -35,7 +35,7 @@ const projectArr: Project[] = [
     id: generateUniqueID(),
     title: "Amprise",
     description:
-      "Mobile application based off an outdoor-social concept, designed to connect people with the environment around them.\nThe word 'Amprise' is a twist on 'emprise', which is a synonym to the words 'adventure', 'undertaking', 'quest'.\n\nTake a look at the UX case study for more information!",
+      "Mobile application based off an outdoor-social concept, designed to connect people with the environment around them.\n\nThe word 'Amprise' is a twist on 'emprise', which is a synonym to the words 'adventure', 'undertaking', 'quest'.\n\nThis mobile application was developed in native iOS by myself, alongside a team of 5 other aspiring UX designers who crafted the Figma high-fidelity prototype whilst contributing to the UI and UX design.\n\nTake a look at the UX case study for more information!",
     demoUrl: "http://uxfol.io/p/kevintyh/045b2e10",
     snapshotUrl: "/images/Amprise-ux.png",
     altText: "Mobile application's user interface mock-ups",
@@ -87,7 +87,7 @@ const projectArr: Project[] = [
     id: generateUniqueID(),
     title: "Citadel VR Experience",
     description:
-      "Mini project created using Unity, Maya 3D modeling and Vuforia virtual reality toolkit (VRTK).\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
+      "Mini project to explore basic virtual reality scene development - featuring music, sound effects, particles and 3D visuals.\nCreated using Unity, Maya 3D modeling and Vuforia virtual reality toolkit (VRTK).\n\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
     demoUrl: "/citadel",
     snapshotUrl: "/images/vr-demo-1.png",
     altText: "Three dimensional virtual reality environment",

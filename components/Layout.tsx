@@ -68,7 +68,7 @@ const Layout = ({ children, title = "Default title" }: Props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="Kevin Tan is a passionate Software Engineer based in Singapore, with professional full-stack development experience and exposure to user experience knowledge."
+          content="Kevin Tan is a Software Engineer from Singapore, with professional full-stack development experience and exposure to user experience and interface design."
         ></meta>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
       </Head>
