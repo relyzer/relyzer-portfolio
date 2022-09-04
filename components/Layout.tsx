@@ -24,7 +24,16 @@ const Layout = ({ children, title = "Default title" }: Props) => {
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta
+          name="description"
+          content="Kevin Tan is a Software Engineer from Singapore, with professional full-stack development experience and exposure to user experience and interface design."
+        />
         <title>{title}</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -62,15 +71,6 @@ const Layout = ({ children, title = "Default title" }: Props) => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         ></link>
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="description"
-          content="Kevin Tan is a Software Engineer from Singapore, with professional full-stack development experience and exposure to user experience and interface design."
-        ></meta>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
       </Head>
       <Header width={windowWidth} />
       <div className="">

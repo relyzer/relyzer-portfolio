@@ -75,9 +75,7 @@ const Header = ({ width }: Props) => {
       }`}
     >
       <div className="hidden lg:flex lg:basis-1/2">
-        <span className="lg:pt-2 lg:ml-2">
           <HomeLogo />
-        </span>
       </div>
       <div className="lg:basis-1/2 align-middle text-right flex items-center lg:justify-end">
         <nav className="flex flex-row z-10 lg:basis-1/2 xl:basis-1/3 p-2 w-full h-full text-center font-medium text-base lg:text-lg 2xl:text-xl align-middle space-x-6 md:space-x-12 items-center">

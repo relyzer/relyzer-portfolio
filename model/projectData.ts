@@ -4,6 +4,27 @@ import { Project } from "../interfaces/project";
 const projectArr: Project[] = [
   {
     id: generateUniqueID(),
+    title: "Citadel VR Experience",
+    description:
+      "Mini project to explore basic virtual reality scene development - featuring music, sound effects, particles and 3D visuals.\nCreated using Unity, Maya 3D modeling and Vuforia virtual reality toolkit (VRTK).\n\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
+    demoUrl: "/citadel",
+    snapshotUrl: "/images/vr-demo-1.png",
+    altText: "Three dimensional virtual reality environment",
+    techStack: [
+      {
+        tech: "Unity",
+        devicon: "devicon-unity-original",
+      },
+      {
+        tech: "Maya",
+        devicon: "devicon-maya-plain",
+      },
+    ],
+    tags: ["Game Design", "Virtual Reality", "3D Modeling"],
+    redirectExternal: false,
+  },
+  {
+    id: generateUniqueID(),
     title: "Portfolio Website",
     description:
       "Personal website to tell my story and showcase my projects.\n\n Equipped with the ability to run Unity WebGL for gameplay demonstration and PDF viewer to display my online course certificates.",
@@ -82,27 +103,6 @@ const projectArr: Project[] = [
     ],
     tags: ["Web Development"],
     redirectExternal: true,
-  },
-  {
-    id: generateUniqueID(),
-    title: "Citadel VR Experience",
-    description:
-      "Mini project to explore basic virtual reality scene development - featuring music, sound effects, particles and 3D visuals.\nCreated using Unity, Maya 3D modeling and Vuforia virtual reality toolkit (VRTK).\n\nClick the demo button to run the unity build.\n\nNote: Demo contains sound and may not be optimised for certain devices.",
-    demoUrl: "/citadel",
-    snapshotUrl: "/images/vr-demo-1.png",
-    altText: "Three dimensional virtual reality environment",
-    techStack: [
-      {
-        tech: "Unity",
-        devicon: "devicon-unity-original",
-      },
-      {
-        tech: "Maya",
-        devicon: "devicon-maya-plain",
-      },
-    ],
-    tags: ["Unity", "Game Design", "3D Modeling"],
-    redirectExternal: false,
   },
 ];
 
