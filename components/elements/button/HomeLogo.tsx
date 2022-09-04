@@ -5,15 +5,16 @@ import Image from "next/image";
 const HomeLogo = () => {
   return (
     <Link href="/">
-      <button>
+      <a className="w-[3.75rem] h-[3.75rem] lg:m-2">
         <Image
           className=""
           src="/images/kevin-logo.png"
           alt="kevintyh logo"
           width={60}
           height={60}
+          layout="fixed"
         />
-      </button>
+      </a>
     </Link>
   );
 };

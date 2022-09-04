@@ -18,6 +18,13 @@ const Experience = ({ ref }: Props) => {
             <div className="max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg px-20 mx-auto">
               <ol className="relative border-l-4 border-green-ocean-green leading-loose">
                 <TimelineDetail
+                  timePeriod={["2022"]}
+                  title="PayPal"
+                  subtitle="Software Engineer"
+                  subtitleTwo="Singapore"
+                  description="Full-stack developer in the Global Compliance - User Experience team."
+                />
+                <TimelineDetail
                   timePeriod={["2022", "2021"]}
                   title="M1 Limited"
                   subtitle="Software Engineer"
@@ -43,7 +50,7 @@ const Experience = ({ ref }: Props) => {
                   timePeriod={["2021", "2018"]}
                   title="Monash University"
                   subtitle="Bachelor of Information Technology"
-                  subtitleTwo="Melbourne"
+                  subtitleTwo="Melbourne, Australia"
                   description="Major in Software Development, Minor in Game Design"
                 />
                 <TimelineDetail
